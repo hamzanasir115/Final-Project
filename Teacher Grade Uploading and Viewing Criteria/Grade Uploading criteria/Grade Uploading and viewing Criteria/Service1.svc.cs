@@ -58,6 +58,15 @@ namespace Grade_Uploading_and_viewing_Criteria
             STUDENTDL.list.Add(std);
         }
 
+        public void RegisterTeacher(string username, string password, string secretcode)
+        {
+            TEACHER teach = new TEACHER();
+            teach.UserName1 = username;
+            teach.Password1 = password;
+            teach.Secretcode = secretcode;
+            TEACHERDL.TeacherList.Add(teach);
+        }
+
         public bool Login(string username, string pass)
         {
             bool isfound = false;
@@ -89,6 +98,20 @@ namespace Grade_Uploading_and_viewing_Criteria
             throw new NotImplementedException();
         }
 
+        public bool IsLoginTeacher(string username, string password)
+        {
+            bool isfound = false;
+            foreach (TEACHER t in TEACHERDL.TeacherList)
+            {
+                if (t.UserName1 == username && t.Password1 == password)
+                {
+                    isfound = true;
+                }
+            }
+            return isfound;
+
+        }
+
         public bool IsAlreadyExist(string username, string pass, string ques, string answer)
         {
             bool x = false;
@@ -98,6 +121,20 @@ namespace Grade_Uploading_and_viewing_Criteria
                 {
                     x = true;
                 }
+            }
+            return x;
+        }
+
+        public bool IsTeacherAlreadyExists(string username, string password)
+        {
+            bool x = false;
+            foreach(TEACHER t in TEACHERDL.TeacherList)
+            {
+                if (t.UserName1 == username)
+                {
+                    x = true;
+                }
+                
             }
             return x;
         }

@@ -44,5 +44,7 @@ namespace Grade_Uploading_and_viewing_Criteria
             get { return Email; }
             set { Email = value; }
         }
+
+       
     }
 }

@@ -35,11 +35,17 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
         
         private System.Threading.SendOrPostCallback RegisterStdOperationCompleted;
         
+        private System.Threading.SendOrPostCallback RegisterTeacherOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback IsLoginTeacherOperationCompleted;
+        
         private System.Threading.SendOrPostCallback LoginOperationCompleted;
         
         private System.Threading.SendOrPostCallback isValidUserOperationCompleted;
         
         private System.Threading.SendOrPostCallback GetDataUsingDataContractOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback IsTeacherAlreadyExistsOperationCompleted;
         
         private bool useDefaultCredentialsSetExplicitly;
         
@@ -89,6 +95,12 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
         public event RegisterStdCompletedEventHandler RegisterStdCompleted;
         
         /// <remarks/>
+        public event RegisterTeacherCompletedEventHandler RegisterTeacherCompleted;
+        
+        /// <remarks/>
+        public event IsLoginTeacherCompletedEventHandler IsLoginTeacherCompleted;
+        
+        /// <remarks/>
         public event LoginCompletedEventHandler LoginCompleted;
         
         /// <remarks/>
@@ -96,6 +108,9 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
         
         /// <remarks/>
         public event GetDataUsingDataContractCompletedEventHandler GetDataUsingDataContractCompleted;
+        
+        /// <remarks/>
+        public event IsTeacherAlreadyExistsCompletedEventHandler IsTeacherAlreadyExistsCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/IsAlreadyExist", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -200,6 +215,70 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/RegisterTeacher", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void RegisterTeacher([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string secretcode) {
+            this.Invoke("RegisterTeacher", new object[] {
+                        username,
+                        password,
+                        secretcode});
+        }
+        
+        /// <remarks/>
+        public void RegisterTeacherAsync(string username, string password, string secretcode) {
+            this.RegisterTeacherAsync(username, password, secretcode, null);
+        }
+        
+        /// <remarks/>
+        public void RegisterTeacherAsync(string username, string password, string secretcode, object userState) {
+            if ((this.RegisterTeacherOperationCompleted == null)) {
+                this.RegisterTeacherOperationCompleted = new System.Threading.SendOrPostCallback(this.OnRegisterTeacherOperationCompleted);
+            }
+            this.InvokeAsync("RegisterTeacher", new object[] {
+                        username,
+                        password,
+                        secretcode}, this.RegisterTeacherOperationCompleted, userState);
+        }
+        
+        private void OnRegisterTeacherOperationCompleted(object arg) {
+            if ((this.RegisterTeacherCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.RegisterTeacherCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/IsLoginTeacher", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void IsLoginTeacher([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, out bool IsLoginTeacherResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool IsLoginTeacherResultSpecified) {
+            object[] results = this.Invoke("IsLoginTeacher", new object[] {
+                        username,
+                        password});
+            IsLoginTeacherResult = ((bool)(results[0]));
+            IsLoginTeacherResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void IsLoginTeacherAsync(string username, string password) {
+            this.IsLoginTeacherAsync(username, password, null);
+        }
+        
+        /// <remarks/>
+        public void IsLoginTeacherAsync(string username, string password, object userState) {
+            if ((this.IsLoginTeacherOperationCompleted == null)) {
+                this.IsLoginTeacherOperationCompleted = new System.Threading.SendOrPostCallback(this.OnIsLoginTeacherOperationCompleted);
+            }
+            this.InvokeAsync("IsLoginTeacher", new object[] {
+                        username,
+                        password}, this.IsLoginTeacherOperationCompleted, userState);
+        }
+        
+        private void OnIsLoginTeacherOperationCompleted(object arg) {
+            if ((this.IsLoginTeacherCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.IsLoginTeacherCompleted(this, new IsLoginTeacherCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/Login", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public void Login([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string pass, out bool LoginResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool LoginResultSpecified) {
             object[] results = this.Invoke("Login", new object[] {
@@ -290,6 +369,38 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
             if ((this.GetDataUsingDataContractCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.GetDataUsingDataContractCompleted(this, new GetDataUsingDataContractCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/IsTeacherAlreadyExists", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void IsTeacherAlreadyExists([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, out bool IsTeacherAlreadyExistsResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool IsTeacherAlreadyExistsResultSpecified) {
+            object[] results = this.Invoke("IsTeacherAlreadyExists", new object[] {
+                        username,
+                        password});
+            IsTeacherAlreadyExistsResult = ((bool)(results[0]));
+            IsTeacherAlreadyExistsResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void IsTeacherAlreadyExistsAsync(string username, string password) {
+            this.IsTeacherAlreadyExistsAsync(username, password, null);
+        }
+        
+        /// <remarks/>
+        public void IsTeacherAlreadyExistsAsync(string username, string password, object userState) {
+            if ((this.IsTeacherAlreadyExistsOperationCompleted == null)) {
+                this.IsTeacherAlreadyExistsOperationCompleted = new System.Threading.SendOrPostCallback(this.OnIsTeacherAlreadyExistsOperationCompleted);
+            }
+            this.InvokeAsync("IsTeacherAlreadyExists", new object[] {
+                        username,
+                        password}, this.IsTeacherAlreadyExistsOperationCompleted, userState);
+        }
+        
+        private void OnIsTeacherAlreadyExistsOperationCompleted(object arg) {
+            if ((this.IsTeacherAlreadyExistsCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.IsTeacherAlreadyExistsCompleted(this, new IsTeacherAlreadyExistsCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -425,6 +536,44 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    public delegate void RegisterTeacherCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    public delegate void IsLoginTeacherCompletedEventHandler(object sender, IsLoginTeacherCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class IsLoginTeacherCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal IsLoginTeacherCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool IsLoginTeacherResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsLoginTeacherResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
     public delegate void LoginCompletedEventHandler(object sender, LoginCompletedEventArgs e);
     
     /// <remarks/>
@@ -513,6 +662,40 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((CompositeType)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    public delegate void IsTeacherAlreadyExistsCompletedEventHandler(object sender, IsTeacherAlreadyExistsCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class IsTeacherAlreadyExistsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal IsTeacherAlreadyExistsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool IsTeacherAlreadyExistsResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsTeacherAlreadyExistsResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
             }
         }
     }

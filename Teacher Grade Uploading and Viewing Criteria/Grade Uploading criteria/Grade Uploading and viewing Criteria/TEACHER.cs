@@ -21,5 +21,13 @@ namespace Grade_Uploading_and_viewing_Criteria
             get { return Password; }
             set { Password = value; }
         }
+
+        private string secretcode;
+
+        public string Secretcode
+        {
+            get { return secretcode; }
+            set { secretcode = value; }
+        }
     }
 }

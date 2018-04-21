@@ -25,6 +25,18 @@
   <wsdl:message name="IService1_RegisterStd_OutputMessage">
     <wsdl:part name="parameters" element="tns:RegisterStdResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_RegisterTeacher_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterTeacher" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RegisterTeacher_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterTeacherResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_IsLoginTeacher_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsLoginTeacher" />
+  </wsdl:message>
+  <wsdl:message name="IService1_IsLoginTeacher_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsLoginTeacherResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_Login_InputMessage">
     <wsdl:part name="parameters" element="tns:Login" />
   </wsdl:message>
@@ -43,6 +55,12 @@
   <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_IsTeacherAlreadyExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsTeacherAlreadyExists" />
+  </wsdl:message>
+  <wsdl:message name="IService1_IsTeacherAlreadyExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsTeacherAlreadyExistsResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="IsAlreadyExist">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/IsAlreadyExist" message="tns:IService1_IsAlreadyExist_InputMessage" />
@@ -56,6 +74,14 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/RegisterStd" message="tns:IService1_RegisterStd_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/RegisterStdResponse" message="tns:IService1_RegisterStd_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="RegisterTeacher">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RegisterTeacher" message="tns:IService1_RegisterTeacher_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RegisterTeacherResponse" message="tns:IService1_RegisterTeacher_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsLoginTeacher">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/IsLoginTeacher" message="tns:IService1_IsLoginTeacher_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/IsLoginTeacherResponse" message="tns:IService1_IsLoginTeacher_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="Login">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/Login" message="tns:IService1_Login_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/LoginResponse" message="tns:IService1_Login_OutputMessage" />
@@ -67,6 +93,10 @@
     <wsdl:operation name="GetDataUsingDataContract">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsTeacherAlreadyExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/IsTeacherAlreadyExists" message="tns:IService1_IsTeacherAlreadyExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/IsTeacherAlreadyExistsResponse" message="tns:IService1_IsTeacherAlreadyExists_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -98,6 +128,24 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="RegisterTeacher">
+      <soap:operation soapAction="http://tempuri.org/IService1/RegisterTeacher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsLoginTeacher">
+      <soap:operation soapAction="http://tempuri.org/IService1/IsLoginTeacher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="Login">
       <soap:operation soapAction="http://tempuri.org/IService1/Login" style="document" />
       <wsdl:input>
@@ -118,6 +166,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetDataUsingDataContract">
       <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsTeacherAlreadyExists">
+      <soap:operation soapAction="http://tempuri.org/IService1/IsTeacherAlreadyExists" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

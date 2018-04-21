@@ -22,6 +22,12 @@ namespace Grade_Uploading_and_viewing_Criteria
         void RegisterStd(string username, string password, string ques, string answer);
 
         [OperationContract]
+        void RegisterTeacher(string username, string password, string secretcode);
+
+        [OperationContract]
+        bool IsLoginTeacher(string username, string password);
+
+        [OperationContract]
         bool Login(string username, string pass);
 
         [OperationContract]
@@ -29,6 +35,9 @@ namespace Grade_Uploading_and_viewing_Criteria
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
+
+        [OperationContract]
+        bool IsTeacherAlreadyExists(string username, string password);
 
         // TODO: Add your service operations here
     }

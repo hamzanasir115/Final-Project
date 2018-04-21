@@ -12,6 +12,7 @@ namespace Grade_Uploading_and_viewing_Criteria
 {
     public class TEACHERDL
     {
+        public static List<TEACHER> TeacherList = new List<TEACHER>();
         public static ArrayList userName = new ArrayList();
         public static ArrayList password = new ArrayList();
     }
