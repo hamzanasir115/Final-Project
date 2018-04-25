@@ -26,7 +26,7 @@ namespace Grade_Uploading_and_Viewing_Criteria.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:8017/Service1.svc")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://10.5.49.67:8017/Service1.svc")]
         public string Grade_Uploading_and_Viewing_Criteria_localhost_Service1 {
             get {
                 return ((string)(this["Grade_Uploading_and_Viewing_Criteria_localhost_Service1"]));

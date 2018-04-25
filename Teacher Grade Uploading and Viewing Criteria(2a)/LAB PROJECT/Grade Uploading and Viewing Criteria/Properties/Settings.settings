@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="Grade_Uploading_and_Viewing_Criteria_localhost_Service1" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://localhost:8017/Service1.svc</Value>
+      <Value Profile="(Default)">http://10.5.49.67:8017/Service1.svc</Value>
     </Setting>
   </Settings>
 </SettingsFile>
