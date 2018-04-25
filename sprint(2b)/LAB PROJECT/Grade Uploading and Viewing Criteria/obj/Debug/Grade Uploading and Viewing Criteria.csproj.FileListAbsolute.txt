@@ -1,0 +1,167 @@
+c:\users\hamza nasir\documents\visual studio 2012\Projects\Grade Uploading and Viewing Criteria\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe.config
+C:\Users\Hamza Nasir\Documents\Visual Studio 2012\Projects\Grade Uploading and Viewing Criteria\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe
+C:\Users\Hamza Nasir\Documents\Visual Studio 2012\Projects\Grade Uploading and Viewing Criteria\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.pdb
+C:\Users\Hamza Nasir\Documents\Visual Studio 2012\Projects\Grade Uploading and Viewing Criteria\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csprojResolveAssemblyReference.cache
+C:\Users\Hamza Nasir\Documents\Visual Studio 2012\Projects\Grade Uploading and Viewing Criteria\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Properties.Resources.resources
+C:\Users\Hamza Nasir\Documents\Visual Studio 2012\Projects\Grade Uploading and Viewing Criteria\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Startup.resources
+C:\Users\Hamza Nasir\Documents\Visual Studio 2012\Projects\Grade Uploading and Viewing Criteria\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentLoginform.resources
+C:\Users\Hamza Nasir\Documents\Visual Studio 2012\Projects\Grade Uploading and Viewing Criteria\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentRegisterationform.resources
+C:\Users\Hamza Nasir\Documents\Visual Studio 2012\Projects\Grade Uploading and Viewing Criteria\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csproj.GenerateResource.Cache
+C:\Users\Hamza Nasir\Documents\Visual Studio 2012\Projects\Grade Uploading and Viewing Criteria\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.exe
+C:\Users\Hamza Nasir\Documents\Visual Studio 2012\Projects\Grade Uploading and Viewing Criteria\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.pdb
+F:\UNI DATA\Semester 4\OOAD LAB\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe.config
+F:\UNI DATA\Semester 4\OOAD LAB\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.exe
+F:\UNI DATA\Semester 4\OOAD LAB\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.pdb
+F:\UNI DATA\Semester 4\OOAD LAB\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe
+F:\UNI DATA\Semester 4\OOAD LAB\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.pdb
+F:\UNI DATA\Semester 4\OOAD LAB\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csprojResolveAssemblyReference.cache
+F:\UNI DATA\Semester 4\OOAD LAB\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Properties.Resources.resources
+F:\UNI DATA\Semester 4\OOAD LAB\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Startup.resources
+F:\UNI DATA\Semester 4\OOAD LAB\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentLoginform.resources
+F:\UNI DATA\Semester 4\OOAD LAB\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentRegisterationform.resources
+F:\UNI DATA\Semester 4\OOAD LAB\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csproj.GenerateResource.Cache
+C:\Users\Hamza Nasir\Desktop\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe.config
+C:\Users\Hamza Nasir\Desktop\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.exe
+C:\Users\Hamza Nasir\Desktop\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.pdb
+C:\Users\Hamza Nasir\Desktop\New Folder\Final-Project\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe.config
+C:\Users\Hamza Nasir\Desktop\New Folder\Final-Project\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.exe
+C:\Users\Hamza Nasir\Desktop\New Folder\Final-Project\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.pdb
+C:\Users\Hamza Nasir\Desktop\New Folder\Final-Project\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe
+C:\Users\Hamza Nasir\Desktop\New Folder\Final-Project\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.pdb
+C:\Users\Hamza Nasir\Desktop\New Folder\Final-Project\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csprojResolveAssemblyReference.cache
+C:\Users\Hamza Nasir\Desktop\New Folder\Final-Project\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Properties.Resources.resources
+C:\Users\Hamza Nasir\Desktop\New Folder\Final-Project\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Startup.resources
+C:\Users\Hamza Nasir\Desktop\New Folder\Final-Project\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentLoginform.resources
+C:\Users\Hamza Nasir\Desktop\New Folder\Final-Project\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentRegisterationform.resources
+C:\Users\Hamza Nasir\Desktop\New Folder\Final-Project\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csproj.GenerateResource.Cache
+F:\UNI DATA\Semester 4\OOAD LAB\SPRINT1\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe.config
+F:\UNI DATA\Semester 4\OOAD LAB\SPRINT1\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.exe
+F:\UNI DATA\Semester 4\OOAD LAB\SPRINT1\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.pdb
+F:\UNI DATA\Semester 4\OOAD LAB\SPRINT1\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe
+F:\UNI DATA\Semester 4\OOAD LAB\SPRINT1\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.pdb
+F:\UNI DATA\Semester 4\OOAD LAB\SPRINT1\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csprojResolveAssemblyReference.cache
+F:\UNI DATA\Semester 4\OOAD LAB\SPRINT1\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Properties.Resources.resources
+F:\UNI DATA\Semester 4\OOAD LAB\SPRINT1\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Startup.resources
+F:\UNI DATA\Semester 4\OOAD LAB\SPRINT1\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentLoginform.resources
+F:\UNI DATA\Semester 4\OOAD LAB\SPRINT1\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentRegisterationform.resources
+F:\UNI DATA\Semester 4\OOAD LAB\SPRINT1\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csproj.GenerateResource.Cache
+C:\Users\Hamza Nasir\Desktop\drive-download-20180420T145556Z-001\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe.config
+C:\Users\Hamza Nasir\Desktop\drive-download-20180420T145556Z-001\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.exe
+C:\Users\Hamza Nasir\Desktop\drive-download-20180420T145556Z-001\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.pdb
+C:\Users\Hamza Nasir\Desktop\drive-download-20180420T145556Z-001\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe
+C:\Users\Hamza Nasir\Desktop\drive-download-20180420T145556Z-001\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.pdb
+C:\Users\Hamza Nasir\Desktop\drive-download-20180420T145556Z-001\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csprojResolveAssemblyReference.cache
+C:\Users\Hamza Nasir\Desktop\drive-download-20180420T145556Z-001\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Properties.Resources.resources
+C:\Users\Hamza Nasir\Desktop\drive-download-20180420T145556Z-001\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Startup.resources
+C:\Users\Hamza Nasir\Desktop\drive-download-20180420T145556Z-001\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentLoginform.resources
+C:\Users\Hamza Nasir\Desktop\drive-download-20180420T145556Z-001\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentRegisterationform.resources
+C:\Users\Hamza Nasir\Desktop\drive-download-20180420T145556Z-001\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csproj.GenerateResource.Cache
+C:\Users\lenevo\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe.config
+C:\Users\lenevo\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.exe
+C:\Users\lenevo\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.pdb
+C:\Users\lenevo\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe
+C:\Users\lenevo\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.pdb
+C:\Users\lenevo\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csprojResolveAssemblyReference.cache
+C:\Users\lenevo\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Properties.Resources.resources
+C:\Users\lenevo\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Startup.resources
+C:\Users\lenevo\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentLoginform.resources
+C:\Users\lenevo\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentRegisterationform.resources
+C:\Users\lenevo\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csproj.GenerateResource.Cache
+C:\Users\lenevo\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.TeacherLoginform.resources
+C:\Users\lenevo\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.TeacherRegistrationform.resources
+C:\Users\Hamza Nasir\Desktop\OOAD\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe.config
+C:\Users\Hamza Nasir\Desktop\OOAD\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.exe
+C:\Users\Hamza Nasir\Desktop\OOAD\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.pdb
+C:\Users\Hamza Nasir\Desktop\OOAD\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe
+C:\Users\Hamza Nasir\Desktop\OOAD\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.pdb
+C:\Users\Hamza Nasir\Desktop\OOAD\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csprojResolveAssemblyReference.cache
+C:\Users\Hamza Nasir\Desktop\OOAD\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Properties.Resources.resources
+C:\Users\Hamza Nasir\Desktop\OOAD\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Startup.resources
+C:\Users\Hamza Nasir\Desktop\OOAD\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentLoginform.resources
+C:\Users\Hamza Nasir\Desktop\OOAD\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentRegisterationform.resources
+C:\Users\Hamza Nasir\Desktop\OOAD\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.TeacherLoginform.resources
+C:\Users\Hamza Nasir\Desktop\OOAD\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.TeacherRegistrationform.resources
+C:\Users\Hamza Nasir\Desktop\OOAD\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csproj.GenerateResource.Cache
+C:\Users\Hamza Nasir\Desktop\OOAD\Final-Project\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Studentforgetpasswordform.resources
+F:\UNI DATA\Semester 4\OOAD LAB\UPDATED AFTER SPRINT 1\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe.config
+F:\UNI DATA\Semester 4\OOAD LAB\UPDATED AFTER SPRINT 1\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.exe
+F:\UNI DATA\Semester 4\OOAD LAB\UPDATED AFTER SPRINT 1\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.pdb
+F:\UNI DATA\Semester 4\OOAD LAB\UPDATED AFTER SPRINT 1\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csprojResolveAssemblyReference.cache
+F:\UNI DATA\Semester 4\OOAD LAB\UPDATED AFTER SPRINT 1\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.ConfirmPasswordform.resources
+F:\UNI DATA\Semester 4\OOAD LAB\UPDATED AFTER SPRINT 1\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Properties.Resources.resources
+F:\UNI DATA\Semester 4\OOAD LAB\UPDATED AFTER SPRINT 1\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Startup.resources
+F:\UNI DATA\Semester 4\OOAD LAB\UPDATED AFTER SPRINT 1\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Studentforgetpasswordform.resources
+F:\UNI DATA\Semester 4\OOAD LAB\UPDATED AFTER SPRINT 1\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentLoginform.resources
+F:\UNI DATA\Semester 4\OOAD LAB\UPDATED AFTER SPRINT 1\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentRegisterationform.resources
+F:\UNI DATA\Semester 4\OOAD LAB\UPDATED AFTER SPRINT 1\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.TeacherLoginform.resources
+F:\UNI DATA\Semester 4\OOAD LAB\UPDATED AFTER SPRINT 1\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.TeacherRegistrationform.resources
+F:\UNI DATA\Semester 4\OOAD LAB\UPDATED AFTER SPRINT 1\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csproj.GenerateResource.Cache
+F:\UNI DATA\Semester 4\OOAD LAB\UPDATED AFTER SPRINT 1\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe
+F:\UNI DATA\Semester 4\OOAD LAB\UPDATED AFTER SPRINT 1\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.pdb
+F:\UNI DATA\Semester 4\OOAD LAB\UPDATED AFTER SPRINT 1\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Reset_Password.resources
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe.config
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.exe
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.pdb
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.pdb
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csprojResolveAssemblyReference.cache
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.ConfirmPasswordform.resources
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Properties.Resources.resources
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Reset_Password.resources
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Startup.resources
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Studentforgetpasswordform.resources
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentLoginform.resources
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentRegisterationform.resources
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.TeacherLoginform.resources
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.TeacherRegistrationform.resources
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csproj.GenerateResource.Cache
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe.config
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.exe
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.pdb
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.pdb
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csprojResolveAssemblyReference.cache
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.ConfirmPasswordform.resources
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Properties.Resources.resources
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Reset_Password.resources
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Startup.resources
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Studentforgetpasswordform.resources
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentLoginform.resources
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentRegisterationform.resources
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.TeacherLoginform.resources
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.TeacherRegistrationform.resources
+C:\Users\Hamza Nasir\Desktop\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csproj.GenerateResource.Cache
+C:\Users\Hamza Nasir\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe.config
+C:\Users\Hamza Nasir\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.exe
+C:\Users\Hamza Nasir\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.pdb
+C:\Users\Hamza Nasir\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe
+C:\Users\Hamza Nasir\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.pdb
+C:\Users\Hamza Nasir\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csprojResolveAssemblyReference.cache
+C:\Users\Hamza Nasir\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Properties.Resources.resources
+C:\Users\Hamza Nasir\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Reset_Password.resources
+C:\Users\Hamza Nasir\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Startup.resources
+C:\Users\Hamza Nasir\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Studentforgetpasswordform.resources
+C:\Users\Hamza Nasir\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentLoginform.resources
+C:\Users\Hamza Nasir\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentRegisterationform.resources
+C:\Users\Hamza Nasir\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Teacherforgetpasswordform.resources
+C:\Users\Hamza Nasir\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.TeacherLoginform.resources
+C:\Users\Hamza Nasir\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.TeacherRegistrationform.resources
+C:\Users\Hamza Nasir\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.TeacherResetPassword.resources
+C:\Users\Hamza Nasir\Desktop\New folder\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csproj.GenerateResource.Cache
+F:\UNI DATA\Semester 4\OOAD LAB\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe.config
+F:\UNI DATA\Semester 4\OOAD LAB\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.exe
+F:\UNI DATA\Semester 4\OOAD LAB\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.pdb
+F:\UNI DATA\Semester 4\OOAD LAB\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe
+F:\UNI DATA\Semester 4\OOAD LAB\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.pdb
+F:\UNI DATA\Semester 4\OOAD LAB\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csprojResolveAssemblyReference.cache
+F:\UNI DATA\Semester 4\OOAD LAB\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Properties.Resources.resources
+F:\UNI DATA\Semester 4\OOAD LAB\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Reset_Password.resources
+F:\UNI DATA\Semester 4\OOAD LAB\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Startup.resources
+F:\UNI DATA\Semester 4\OOAD LAB\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Studentforgetpasswordform.resources
+F:\UNI DATA\Semester 4\OOAD LAB\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentLoginform.resources
+F:\UNI DATA\Semester 4\OOAD LAB\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.StudentRegisterationform.resources
+F:\UNI DATA\Semester 4\OOAD LAB\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.Teacherforgetpasswordform.resources
+F:\UNI DATA\Semester 4\OOAD LAB\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.TeacherLoginform.resources
+F:\UNI DATA\Semester 4\OOAD LAB\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.TeacherRegistrationform.resources
+F:\UNI DATA\Semester 4\OOAD LAB\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade_Uploading_and_Viewing_Criteria.TeacherResetPassword.resources
+F:\UNI DATA\Semester 4\OOAD LAB\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.csproj.GenerateResource.Cache
