@@ -78,6 +78,12 @@
     <Compile Include="StudentLoginform.Designer.cs">
       <DependentUpon>StudentLoginform.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentLoginViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentLoginViewForm.Designer.cs">
+      <DependentUpon>StudentLoginViewForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentRegisterationform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentLoginform.resx">
       <DependentUpon>StudentLoginform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentLoginViewForm.resx">
+      <DependentUpon>StudentLoginViewForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentRegisterationform.resx">
       <DependentUpon>StudentRegisterationform.cs</DependentUpon>
