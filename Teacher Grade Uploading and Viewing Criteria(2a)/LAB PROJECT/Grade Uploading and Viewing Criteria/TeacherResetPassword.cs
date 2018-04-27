@@ -10,41 +10,35 @@ using System.Windows.Forms;
 
 namespace Grade_Uploading_and_Viewing_Criteria
 {
-    public partial class Reset_Password : Form
+    public partial class TeacherResetPassword : Form
     {
-        public Reset_Password()
+        public TeacherResetPassword()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void lnklogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            TeacherLoginform rf = new TeacherLoginform();
+            this.Hide();
+            rf.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void bbreset_Click(object sender, EventArgs e)
         {
+            localhost.Service1 server = new localhost.Service1();
             if (txtpassword.Text.Length >= 6)
             {
-                localhost.Service1 server = new localhost.Service1();
-                server.resetPass(txtusername.Text, txtpassword.Text);
+                server.resetPassTeacher(txtusername.Text, txtpassword.Text);
                 MessageBox.Show("password has been reset");
             }
             else
             {
-                MessageBox.Show("Invalid password length");
+                MessageBox.Show("Length of password is incorrect");
             }
-            
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            StudentLoginform form = new StudentLoginform();
-            form.Show();
-            this.Hide();
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void txtpassword_TextChanged(object sender, EventArgs e)
         {
             if (txtpassword.Text.Length < 6)
             {

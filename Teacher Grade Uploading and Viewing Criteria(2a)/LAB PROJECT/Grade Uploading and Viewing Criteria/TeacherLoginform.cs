@@ -25,7 +25,9 @@ namespace Grade_Uploading_and_Viewing_Criteria
             ser.IsLoginTeacher(txtusername.Text, txtpassword.Text, out isvalidteacher, out isvalidteacherpassed);
             if (isvalidteacher)
             {
-                MessageBox.Show("Valid Teacher");
+                TeacherLoginView form = new TeacherLoginView();
+                form.Show();
+                this.Hide();
             }
             else
             {
@@ -36,6 +38,13 @@ namespace Grade_Uploading_and_Viewing_Criteria
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             TeacherRegistrationform frm = new TeacherRegistrationform();
+            this.Hide();
+            frm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TeacherForgetPassword frm = new TeacherForgetPassword();
             this.Hide();
             frm.Show();
         }

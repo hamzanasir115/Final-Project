@@ -51,6 +51,11 @@ namespace Grade_Uploading_and_viewing_Criteria
         void DeleteRecord(string username, string secretquestion, string answer);
         [OperationContract]
         void resetPass(string username, string pass);
+
+        [OperationContract]
+        bool SetPasswordTeacher(string username, string code);
+        [OperationContract]
+        void resetPassTeacher(string username, string pass);
     }
 
 

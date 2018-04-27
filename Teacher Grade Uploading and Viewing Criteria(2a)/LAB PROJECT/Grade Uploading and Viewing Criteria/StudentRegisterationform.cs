@@ -72,5 +72,17 @@ namespace Grade_Uploading_and_Viewing_Criteria
                 errorProvider1.SetError(txtpassword, "");
             }
         }
+
+        private void txtanswer_TextChanged(object sender, EventArgs e)
+        {
+            if (txtanswer.Text.Length < 4)
+            {
+                errorProvider2.SetError(txtanswer, "Invalid answer");
+            }
+            else
+            {
+                errorProvider2.SetError(txtanswer, "");
+            }
+        }
     }
 }

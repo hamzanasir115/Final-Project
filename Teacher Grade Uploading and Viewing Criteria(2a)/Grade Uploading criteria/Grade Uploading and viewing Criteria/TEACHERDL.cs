@@ -15,5 +15,31 @@ namespace Grade_Uploading_and_viewing_Criteria
         public static List<TEACHER> TeacherList = new List<TEACHER>();
         public static ArrayList userName = new ArrayList();
         public static ArrayList password = new ArrayList();
+        public static bool SetPasswordTeacher(string username, string code)
+        {
+            bool isFound = false;
+            foreach (TEACHER Te in TeacherList)
+            {
+
+                if (Te.UserName1 == username && Te.Secretcode == code)
+                {
+
+                    isFound = true;
+
+                }
+            }
+            return isFound;
+
+        }
+        public static void resetPassTeacher(string username, string pass)
+        {
+            foreach (TEACHER Te in TeacherList)
+            {
+                if (Te.UserName1 == username)
+                {
+                    Te.Password1 = pass;
+                }
+            }
+        }
     }
 }

@@ -90,17 +90,35 @@
     <Compile Include="StudentRegisterationform.Designer.cs">
       <DependentUpon>StudentRegisterationform.cs</DependentUpon>
     </Compile>
+    <Compile Include="TeacherForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherForgetPassword.Designer.cs">
+      <DependentUpon>TeacherForgetPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="TeacherLoginform.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TeacherLoginform.Designer.cs">
       <DependentUpon>TeacherLoginform.cs</DependentUpon>
     </Compile>
+    <Compile Include="TeacherLoginView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherLoginView.Designer.cs">
+      <DependentUpon>TeacherLoginView.cs</DependentUpon>
+    </Compile>
     <Compile Include="TeacherRegistrationform.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TeacherRegistrationform.Designer.cs">
       <DependentUpon>TeacherRegistrationform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherResetPassword.Designer.cs">
+      <DependentUpon>TeacherResetPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="Web References\localhost\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -137,11 +155,20 @@
     <EmbeddedResource Include="StudentRegisterationform.resx">
       <DependentUpon>StudentRegisterationform.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TeacherForgetPassword.resx">
+      <DependentUpon>TeacherForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TeacherLoginform.resx">
       <DependentUpon>TeacherLoginform.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TeacherLoginView.resx">
+      <DependentUpon>TeacherLoginView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TeacherRegistrationform.resx">
       <DependentUpon>TeacherRegistrationform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherResetPassword.resx">
+      <DependentUpon>TeacherResetPassword.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

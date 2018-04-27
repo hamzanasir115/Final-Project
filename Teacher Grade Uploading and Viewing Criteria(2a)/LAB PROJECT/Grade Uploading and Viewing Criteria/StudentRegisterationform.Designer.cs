@@ -44,7 +44,9 @@
             this.cmbtxt = new System.Windows.Forms.ComboBox();
             this.lnklogin = new System.Windows.Forms.LinkLabel();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -151,6 +153,7 @@
             this.txtanswer.Name = "txtanswer";
             this.txtanswer.Size = new System.Drawing.Size(194, 20);
             this.txtanswer.TabIndex = 11;
+            this.txtanswer.TextChanged += new System.EventHandler(this.txtanswer_TextChanged);
             // 
             // cmbtxt
             // 
@@ -182,6 +185,10 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
             // StudentRegisterationform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -204,6 +211,7 @@
             this.Name = "StudentRegisterationform";
             this.Text = "StudentRegisterationform";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,5 +234,6 @@
         private System.Windows.Forms.ComboBox cmbtxt;
         private System.Windows.Forms.LinkLabel lnklogin;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
     }
 }

@@ -169,5 +169,14 @@ namespace Grade_Uploading_and_viewing_Criteria
         {
              STUDENTDL.resetPass(username, pass);
         }
+        public bool SetPasswordTeacher(string username, string code)
+        {
+            return TEACHERDL.SetPasswordTeacher(username, code);
+        }
+
+        public void resetPassTeacher(string username, string pass)
+        {
+            TEACHERDL.resetPassTeacher(username, pass);
+        }
     }
 }

@@ -33,7 +33,6 @@ namespace Grade_Uploading_and_Viewing_Criteria
             
                 if (isvaliduser)
                 {
-                    MessageBox.Show("Valid User");
                     StudentLoginViewForm r = new StudentLoginViewForm();
                     this.Hide();
                     r.Show();
