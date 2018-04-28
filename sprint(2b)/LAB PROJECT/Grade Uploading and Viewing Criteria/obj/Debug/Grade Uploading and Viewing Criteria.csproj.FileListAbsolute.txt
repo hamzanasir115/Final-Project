@@ -168,3 +168,6 @@ F:\UNI DATA\Semester 4\OOAD LAB\sprint(2b)\LAB PROJECT\Grade Uploading and Viewi
 C:\Users\lenevo\Desktop\New folder\Final-Project\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe.config
 C:\Users\lenevo\Desktop\New folder\Final-Project\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.exe
 C:\Users\lenevo\Desktop\New folder\Final-Project\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.pdb
+C:\Users\Engr\Desktop\OOAD\Final-Project\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\bin\Debug\Grade Uploading and Viewing Criteria.exe.config
+C:\Users\Engr\Desktop\OOAD\Final-Project\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.exe
+C:\Users\Engr\Desktop\OOAD\Final-Project\sprint(2b)\LAB PROJECT\Grade Uploading and Viewing Criteria\obj\Debug\Grade Uploading and Viewing Criteria.pdb

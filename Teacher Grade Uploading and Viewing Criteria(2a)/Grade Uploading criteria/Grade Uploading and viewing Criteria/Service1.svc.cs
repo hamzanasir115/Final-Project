@@ -178,5 +178,40 @@ namespace Grade_Uploading_and_viewing_Criteria
         {
             TEACHERDL.resetPassTeacher(username, pass);
         }
+
+        public bool isValidSubject(string subjectName, string subjectCode)
+        {
+            bool isfoundsubject = false;
+            foreach (SUBJECT s in SUBJECTDL.SubjectList)
+            {
+                if (s.SubjectName1 == subjectName && s.SubjectCode1 == subjectCode)
+                {
+                    isfoundsubject = true;
+                }
+            }
+            return isfoundsubject;          
+        }
+
+        public void AddSubject(string subjectname, string subjectcode)
+        {
+            SUBJECT sub = new SUBJECT();
+            sub.SubjectName1 = subjectname;
+            sub.SubjectCode1 = subjectcode;
+            SUBJECTDL.SubjectList.Add(sub);
+        }
+
+        public bool IsSubjectAlreadyExist(string subjectname, string subjectcode)
+        {
+            bool isSubjectAlreadyExist = false;
+            foreach (SUBJECT s in SUBJECTDL.SubjectList)
+            {
+                if (s.SubjectName1 == subjectname)
+                {
+                    isSubjectAlreadyExist = true;
+                }
+            }
+            return isSubjectAlreadyExist;
+        }
+        
     }
 }

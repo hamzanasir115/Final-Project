@@ -23,7 +23,7 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Web.Services.WebServiceBindingAttribute(Name="BasicHttpBinding_IService1", Namespace="http://tempuri.org/")]
@@ -58,6 +58,12 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
         private System.Threading.SendOrPostCallback SetPasswordTeacherOperationCompleted;
         
         private System.Threading.SendOrPostCallback resetPassTeacherOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback isValidSubjectOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AddSubjectOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback IsSubjectAlreadyExistOperationCompleted;
         
         private bool useDefaultCredentialsSetExplicitly;
         
@@ -141,6 +147,15 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
         
         /// <remarks/>
         public event resetPassTeacherCompletedEventHandler resetPassTeacherCompleted;
+        
+        /// <remarks/>
+        public event isValidSubjectCompletedEventHandler isValidSubjectCompleted;
+        
+        /// <remarks/>
+        public event AddSubjectCompletedEventHandler AddSubjectCompleted;
+        
+        /// <remarks/>
+        public event IsSubjectAlreadyExistCompletedEventHandler IsSubjectAlreadyExistCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/IsAlreadyExist", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -627,6 +642,100 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/isValidSubject", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void isValidSubject([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string subjectName, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string subjectCode, out bool isValidSubjectResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool isValidSubjectResultSpecified) {
+            object[] results = this.Invoke("isValidSubject", new object[] {
+                        subjectName,
+                        subjectCode});
+            isValidSubjectResult = ((bool)(results[0]));
+            isValidSubjectResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void isValidSubjectAsync(string subjectName, string subjectCode) {
+            this.isValidSubjectAsync(subjectName, subjectCode, null);
+        }
+        
+        /// <remarks/>
+        public void isValidSubjectAsync(string subjectName, string subjectCode, object userState) {
+            if ((this.isValidSubjectOperationCompleted == null)) {
+                this.isValidSubjectOperationCompleted = new System.Threading.SendOrPostCallback(this.OnisValidSubjectOperationCompleted);
+            }
+            this.InvokeAsync("isValidSubject", new object[] {
+                        subjectName,
+                        subjectCode}, this.isValidSubjectOperationCompleted, userState);
+        }
+        
+        private void OnisValidSubjectOperationCompleted(object arg) {
+            if ((this.isValidSubjectCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.isValidSubjectCompleted(this, new isValidSubjectCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/AddSubject", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void AddSubject([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string subjectname, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string subjectcode) {
+            this.Invoke("AddSubject", new object[] {
+                        subjectname,
+                        subjectcode});
+        }
+        
+        /// <remarks/>
+        public void AddSubjectAsync(string subjectname, string subjectcode) {
+            this.AddSubjectAsync(subjectname, subjectcode, null);
+        }
+        
+        /// <remarks/>
+        public void AddSubjectAsync(string subjectname, string subjectcode, object userState) {
+            if ((this.AddSubjectOperationCompleted == null)) {
+                this.AddSubjectOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAddSubjectOperationCompleted);
+            }
+            this.InvokeAsync("AddSubject", new object[] {
+                        subjectname,
+                        subjectcode}, this.AddSubjectOperationCompleted, userState);
+        }
+        
+        private void OnAddSubjectOperationCompleted(object arg) {
+            if ((this.AddSubjectCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AddSubjectCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/IsSubjectAlreadyExist", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void IsSubjectAlreadyExist([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string subjectname, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string subjectcode, out bool IsSubjectAlreadyExistResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool IsSubjectAlreadyExistResultSpecified) {
+            object[] results = this.Invoke("IsSubjectAlreadyExist", new object[] {
+                        subjectname,
+                        subjectcode});
+            IsSubjectAlreadyExistResult = ((bool)(results[0]));
+            IsSubjectAlreadyExistResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void IsSubjectAlreadyExistAsync(string subjectname, string subjectcode) {
+            this.IsSubjectAlreadyExistAsync(subjectname, subjectcode, null);
+        }
+        
+        /// <remarks/>
+        public void IsSubjectAlreadyExistAsync(string subjectname, string subjectcode, object userState) {
+            if ((this.IsSubjectAlreadyExistOperationCompleted == null)) {
+                this.IsSubjectAlreadyExistOperationCompleted = new System.Threading.SendOrPostCallback(this.OnIsSubjectAlreadyExistOperationCompleted);
+            }
+            this.InvokeAsync("IsSubjectAlreadyExist", new object[] {
+                        subjectname,
+                        subjectcode}, this.IsSubjectAlreadyExistOperationCompleted, userState);
+        }
+        
+        private void OnIsSubjectAlreadyExistOperationCompleted(object arg) {
+            if ((this.IsSubjectAlreadyExistCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.IsSubjectAlreadyExistCompleted(this, new IsSubjectAlreadyExistCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -693,11 +802,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void IsAlreadyExistCompletedEventHandler(object sender, IsAlreadyExistCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class IsAlreadyExistCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -727,11 +836,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void GetDataCompletedEventHandler(object sender, GetDataCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -753,19 +862,19 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void RegisterStdCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void RegisterTeacherCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void IsLoginTeacherCompletedEventHandler(object sender, IsLoginTeacherCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class IsLoginTeacherCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -795,11 +904,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void LoginCompletedEventHandler(object sender, LoginCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LoginCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -829,11 +938,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void isValidUserCompletedEventHandler(object sender, isValidUserCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class isValidUserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -863,11 +972,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void GetDataUsingDataContractCompletedEventHandler(object sender, GetDataUsingDataContractCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetDataUsingDataContractCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -889,11 +998,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void IsTeacherAlreadyExistsCompletedEventHandler(object sender, IsTeacherAlreadyExistsCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class IsTeacherAlreadyExistsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -923,11 +1032,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void ValidResetCompletedEventHandler(object sender, ValidResetCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ValidResetCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -957,11 +1066,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void SetPasswordCompletedEventHandler(object sender, SetPasswordCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SetPasswordCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -991,19 +1100,19 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void DeleteRecordCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void resetPassCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void SetPasswordTeacherCompletedEventHandler(object sender, SetPasswordTeacherCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SetPasswordTeacherCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1033,8 +1142,80 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void resetPassTeacherCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void isValidSubjectCompletedEventHandler(object sender, isValidSubjectCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class isValidSubjectCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal isValidSubjectCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool isValidSubjectResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool isValidSubjectResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void AddSubjectCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void IsSubjectAlreadyExistCompletedEventHandler(object sender, IsSubjectAlreadyExistCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class IsSubjectAlreadyExistCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal IsSubjectAlreadyExistCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool IsSubjectAlreadyExistResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsSubjectAlreadyExistResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
 }
 
 #pragma warning restore 1591

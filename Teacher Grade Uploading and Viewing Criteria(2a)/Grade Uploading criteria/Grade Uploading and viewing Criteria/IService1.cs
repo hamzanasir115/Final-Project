@@ -56,6 +56,13 @@ namespace Grade_Uploading_and_viewing_Criteria
         bool SetPasswordTeacher(string username, string code);
         [OperationContract]
         void resetPassTeacher(string username, string pass);
+
+        [OperationContract]
+        bool isValidSubject(string subjectName, string subjectCode);
+        [OperationContract]
+        void AddSubject(string subjectname, string subjectcode);
+        [OperationContract]
+        bool IsSubjectAlreadyExist(string subjectname, string subjectcode);
     }
 
 

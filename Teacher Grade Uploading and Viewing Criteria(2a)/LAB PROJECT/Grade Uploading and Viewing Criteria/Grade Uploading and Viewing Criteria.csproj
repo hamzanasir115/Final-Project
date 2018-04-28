@@ -52,6 +52,12 @@
     <Compile Include="ConfirmPasswordform.Designer.cs">
       <DependentUpon>ConfirmPasswordform.cs</DependentUpon>
     </Compile>
+    <Compile Include="OfferedSubjectsform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfferedSubjectsform.Designer.cs">
+      <DependentUpon>OfferedSubjectsform.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reset Password.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     </Compile>
     <EmbeddedResource Include="ConfirmPasswordform.resx">
       <DependentUpon>ConfirmPasswordform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfferedSubjectsform.resx">
+      <DependentUpon>OfferedSubjectsform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

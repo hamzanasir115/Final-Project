@@ -97,6 +97,24 @@
   <wsdl:message name="IService1_resetPassTeacher_OutputMessage">
     <wsdl:part name="parameters" element="tns:resetPassTeacherResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_isValidSubject_InputMessage">
+    <wsdl:part name="parameters" element="tns:isValidSubject" />
+  </wsdl:message>
+  <wsdl:message name="IService1_isValidSubject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:isValidSubjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddSubject_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSubject" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddSubject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSubjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_IsSubjectAlreadyExist_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsSubjectAlreadyExist" />
+  </wsdl:message>
+  <wsdl:message name="IService1_IsSubjectAlreadyExist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsSubjectAlreadyExistResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="IsAlreadyExist">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/IsAlreadyExist" message="tns:IService1_IsAlreadyExist_InputMessage" />
@@ -157,6 +175,18 @@
     <wsdl:operation name="resetPassTeacher">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/resetPassTeacher" message="tns:IService1_resetPassTeacher_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/resetPassTeacherResponse" message="tns:IService1_resetPassTeacher_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="isValidSubject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/isValidSubject" message="tns:IService1_isValidSubject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/isValidSubjectResponse" message="tns:IService1_isValidSubject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSubject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddSubject" message="tns:IService1_AddSubject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddSubjectResponse" message="tns:IService1_AddSubject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsSubjectAlreadyExist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/IsSubjectAlreadyExist" message="tns:IService1_IsSubjectAlreadyExist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/IsSubjectAlreadyExistResponse" message="tns:IService1_IsSubjectAlreadyExist_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -289,6 +319,33 @@
     </wsdl:operation>
     <wsdl:operation name="resetPassTeacher">
       <soap:operation soapAction="http://tempuri.org/IService1/resetPassTeacher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isValidSubject">
+      <soap:operation soapAction="http://tempuri.org/IService1/isValidSubject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSubject">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddSubject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsSubjectAlreadyExist">
+      <soap:operation soapAction="http://tempuri.org/IService1/IsSubjectAlreadyExist" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

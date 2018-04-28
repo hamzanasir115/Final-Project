@@ -21,5 +21,12 @@ namespace Grade_Uploading_and_Viewing_Criteria
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OfferedSubjectsform sub = new OfferedSubjectsform();
+            this.Hide();
+            sub.Show();
+        }
     }
 }
