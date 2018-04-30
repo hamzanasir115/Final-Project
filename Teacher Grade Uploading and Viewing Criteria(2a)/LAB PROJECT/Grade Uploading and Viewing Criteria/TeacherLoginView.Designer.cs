@@ -50,6 +50,7 @@
             this.cmbsubjects.Name = "cmbsubjects";
             this.cmbsubjects.Size = new System.Drawing.Size(121, 21);
             this.cmbsubjects.TabIndex = 1;
+            this.cmbsubjects.SelectedIndexChanged += new System.EventHandler(this.cmbsubjects_SelectedIndexChanged);
             // 
             // btnView
             // 
@@ -68,6 +69,7 @@
             this.btnLogout.TabIndex = 3;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // TeacherLoginView
             // 

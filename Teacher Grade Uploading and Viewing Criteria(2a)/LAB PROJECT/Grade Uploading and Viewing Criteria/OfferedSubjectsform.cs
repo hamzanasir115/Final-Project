@@ -79,5 +79,12 @@ namespace Grade_Uploading_and_Viewing_Criteria
             this.Hide();
             login.Show();
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            StudentLoginViewForm frm = new StudentLoginViewForm();
+            this.Hide();
+            frm.Show();
+        }
     }
 }

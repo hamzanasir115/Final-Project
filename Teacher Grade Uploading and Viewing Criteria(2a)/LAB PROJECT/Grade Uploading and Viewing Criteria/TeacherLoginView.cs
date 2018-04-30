@@ -16,5 +16,17 @@ namespace Grade_Uploading_and_Viewing_Criteria
         {
             InitializeComponent();
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            TeacherLoginform frm = new TeacherLoginform();
+            this.Hide();
+            frm.Show();
+        }
+
+        private void cmbsubjects_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
