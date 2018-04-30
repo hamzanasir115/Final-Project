@@ -28,5 +28,12 @@ namespace Grade_Uploading_and_Viewing_Criteria
             this.Hide();
             sub.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            StudentLoginform login = new StudentLoginform();
+            this.Hide();
+            login.Show();
+        }
     }
 }

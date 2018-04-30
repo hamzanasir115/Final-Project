@@ -52,5 +52,10 @@ namespace Grade_Uploading_and_Viewing_Criteria
             forget.Show();
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
