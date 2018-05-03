@@ -60,9 +60,17 @@ namespace Grade_Uploading_and_viewing_Criteria
         [OperationContract]
         bool isValidSubject(string subjectName, string subjectCode);
         [OperationContract]
-        void AddSubject(string subjectname, string subjectcode);
+        void AddSubject(string username, string subjectname, string subjectcode, string creditHour);
         [OperationContract]
-        bool IsSubjectAlreadyExist(string subjectname, string subjectcode);
+        bool IsSubjectAlreadyExist(string username, string subjectname, string subjectcode);
+       /* [OperationContract]
+        List<string> ShowSubjects(string username);
+        */
+
+        [OperationContract]
+        List<SUBJECT> showSubjects(string username);
+
+
     }
 
 

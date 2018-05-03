@@ -7,4 +7,19 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="CompositeType" nillable="true" type="tns:CompositeType" />
+  <xs:complexType name="ArrayOfSUBJECT">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SUBJECT" nillable="true" type="tns:SUBJECT" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSUBJECT" nillable="true" type="tns:ArrayOfSUBJECT" />
+  <xs:complexType name="SUBJECT">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreditHours1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubjectCode1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubjectName1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SUBJECT" nillable="true" type="tns:SUBJECT" />
 </xs:schema>

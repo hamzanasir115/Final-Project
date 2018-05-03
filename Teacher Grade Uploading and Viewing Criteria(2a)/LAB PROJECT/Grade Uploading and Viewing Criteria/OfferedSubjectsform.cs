@@ -22,49 +22,55 @@ namespace Grade_Uploading_and_Viewing_Criteria
             localhost.Service1 service = new localhost.Service1();
             bool isalreadyexist;
             bool isalreadyexistpassed;
-            service.IsSubjectAlreadyExist(cmbSubject.Text, cmbCode.Text, out isalreadyexist, out isalreadyexistpassed);
+            service.IsSubjectAlreadyExist(txtUserName.Text, cmbSubject.Text, cmbCode.Text, out isalreadyexist, out isalreadyexistpassed);
             if(isalreadyexist)
             {
                 MessageBox.Show("Subject is added already");
                 cmbSubject.Text = "";
                 cmbCode.Text = "";
+                txtCreditHour.Text = "";
             }
             else
             {
-                if(cmbSubject.Text == sub1.Text && cmbCode.Text == code1.Text)
+                if(cmbSubject.Text == sub1.Text && cmbCode.Text == code1.Text && txtCreditHour.Text == label6.Text)
                 {
-                    service.AddSubject(cmbSubject.Text, cmbCode.Text);
+                    service.AddSubject(txtUserName.Text, cmbSubject.Text, cmbCode.Text, txtCreditHour.Text);
                     MessageBox.Show("Subject has been added");
                     cmbSubject.Text = "";
                     cmbCode.Text = "";
+                    txtCreditHour.Text = "";
                 }
-                else if(cmbSubject.Text == sub2.Text && cmbCode.Text == code2.Text)
+                else if (cmbSubject.Text == sub2.Text && cmbCode.Text == code2.Text && txtCreditHour.Text == label6.Text)
                 {
-                    service.AddSubject(cmbSubject.Text, cmbCode.Text);
+                    service.AddSubject(txtUserName.Text, cmbSubject.Text, cmbCode.Text, txtCreditHour.Text);
                     MessageBox.Show("Subject has been added");
                     cmbSubject.Text = "";
                     cmbCode.Text = "";
+                    txtCreditHour.Text = "";
                 }
-                else if(cmbSubject.Text == sub3.Text && cmbCode.Text == code3.Text)
+                else if (cmbSubject.Text == sub3.Text && cmbCode.Text == code3.Text && txtCreditHour.Text == label6.Text)
                 {
-                    service.AddSubject(cmbSubject.Text, cmbCode.Text);
+                    service.AddSubject(txtUserName.Text,cmbSubject.Text, cmbCode.Text, txtCreditHour.Text);
                     MessageBox.Show("Subject has been added");
                     cmbSubject.Text = "";
                     cmbCode.Text = "";
+                    txtCreditHour.Text = "";
                 }
-                else if (cmbSubject.Text == label4.Text && cmbCode.Text == code4.Text)
+                else if (cmbSubject.Text == label4.Text && cmbCode.Text == code4.Text && txtCreditHour.Text == label6.Text)
                 {
-                    service.AddSubject(cmbSubject.Text, cmbCode.Text);
+                    service.AddSubject(txtUserName.Text,cmbSubject.Text, cmbCode.Text, txtCreditHour.Text);
                     MessageBox.Show("Subject has been added");
                     cmbSubject.Text = "";
                     cmbCode.Text = "";
+                    txtCreditHour.Text = "";
                 }
-                else if (cmbSubject.Text == sub5.Text && cmbCode.Text == code5.Text)
+                else if (cmbSubject.Text == sub5.Text && cmbCode.Text == code5.Text && txtCreditHour.Text == label6.Text)
                 {
-                    service.AddSubject(cmbSubject.Text, cmbCode.Text);
+                    service.AddSubject(txtUserName.Text,cmbSubject.Text, cmbCode.Text, txtCreditHour.Text);
                     MessageBox.Show("Subject has been added");
                     cmbSubject.Text = "";
                     cmbCode.Text = "";
+                    txtCreditHour.Text = "";
                 }
                 else
                 {
@@ -85,6 +91,16 @@ namespace Grade_Uploading_and_Viewing_Criteria
             StudentLoginViewForm frm = new StudentLoginViewForm();
             this.Hide();
             frm.Show();
+        }
+
+        private void OfferedSubjectsform_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

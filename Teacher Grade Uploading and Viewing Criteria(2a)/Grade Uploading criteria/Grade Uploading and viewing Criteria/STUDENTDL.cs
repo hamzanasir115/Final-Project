@@ -10,6 +10,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 
+using System.Windows;
+
 namespace Grade_Uploading_and_viewing_Criteria
 {
     public class STUDENTDL
@@ -19,6 +21,10 @@ namespace Grade_Uploading_and_viewing_Criteria
         public static ArrayList password = new ArrayList();
         public static ArrayList secretQ = new ArrayList();
         public static ArrayList answer = new ArrayList();
+        public static ArrayList subject = new ArrayList();
+
+        public static List<SUBJECT> RegisterSubjectList = new List<SUBJECT>();
+
         public static  STUDENT loginuser = null;
         public static bool SetPassword(string username,  string ques, string ans)
         {
@@ -46,6 +52,21 @@ namespace Grade_Uploading_and_viewing_Criteria
                 }
             }
         }
+/*
+        public static List<STUDENTDL> showSubjects(string username)
+        {
+            List<STUDENTDL> dl = new List<STUDENTDL>();
+           
+            foreach(STUDENT s in STUDENTDL.list)
+            {
+                if (s.UserName1 == username)
+                {
+                    STUDENTDL.subject.Add(s);
+                    
+                }
+            }
 
+            return dl;
+        }*/
     }
 }

@@ -53,3 +53,8 @@ C:\Users\Engr\Desktop\OOAD1\Final-Project\Teacher Grade Uploading and Viewing Cr
 C:\Users\Engr\Desktop\OOAD1\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\Grade Uploading criteria\Grade Uploading and viewing Criteria\obj\Debug\Grade Uploading and viewing Criteria.csprojResolveAssemblyReference.cache
 C:\Users\Engr\Desktop\OOAD1\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\Grade Uploading criteria\Grade Uploading and viewing Criteria\obj\Debug\Grade Uploading and viewing Criteria.dll
 C:\Users\Engr\Desktop\OOAD1\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\Grade Uploading criteria\Grade Uploading and viewing Criteria\obj\Debug\Grade Uploading and viewing Criteria.pdb
+C:\Users\lenevo\Desktop\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\Grade Uploading criteria\Grade Uploading and viewing Criteria\bin\Grade Uploading and viewing Criteria.dll
+C:\Users\lenevo\Desktop\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\Grade Uploading criteria\Grade Uploading and viewing Criteria\bin\Grade Uploading and viewing Criteria.pdb
+C:\Users\lenevo\Desktop\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\Grade Uploading criteria\Grade Uploading and viewing Criteria\obj\Debug\Grade Uploading and viewing Criteria.csprojResolveAssemblyReference.cache
+C:\Users\lenevo\Desktop\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\Grade Uploading criteria\Grade Uploading and viewing Criteria\obj\Debug\Grade Uploading and viewing Criteria.dll
+C:\Users\lenevo\Desktop\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\Grade Uploading criteria\Grade Uploading and viewing Criteria\obj\Debug\Grade Uploading and viewing Criteria.pdb

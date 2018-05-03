@@ -35,5 +35,12 @@ namespace Grade_Uploading_and_Viewing_Criteria
             this.Hide();
             login.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            StudentRegisterSubject form = new StudentRegisterSubject();
+            form.Show();
+            this.Hide();
+        }
     }
 }

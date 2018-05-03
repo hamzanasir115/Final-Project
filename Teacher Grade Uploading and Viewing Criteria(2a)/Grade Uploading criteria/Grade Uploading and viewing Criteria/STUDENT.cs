@@ -44,7 +44,20 @@ namespace Grade_Uploading_and_viewing_Criteria
             get { return Email; }
             set { Email = value; }
         }
+        private string subject;
 
-       
+        public string Subject
+        {
+            get { return subject; }
+            set { subject = value; }
+        }
+
+        private List<string> subjects;
+
+        public List<string> Subjects
+        {
+            get { return subjects; }
+            set { subjects = value; }
+        }
     }
 }

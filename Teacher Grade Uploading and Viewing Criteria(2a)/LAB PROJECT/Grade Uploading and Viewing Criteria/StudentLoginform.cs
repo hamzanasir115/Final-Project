@@ -57,5 +57,17 @@ namespace Grade_Uploading_and_Viewing_Criteria
         {
             this.Close();
         }
+
+        private void StudentLoginform_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Startup s = new Startup();
+            s.Show();
+            this.Hide();
+        }
     }
 }

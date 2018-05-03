@@ -7,6 +7,14 @@ namespace Grade_Uploading_and_viewing_Criteria
 {
     public class SUBJECT
     {
+        private string username;
+
+        public string Username
+        {
+            get { return username; }
+            set { username = value; }
+        }
+
         private string SubjectName;
 
         public string SubjectName1

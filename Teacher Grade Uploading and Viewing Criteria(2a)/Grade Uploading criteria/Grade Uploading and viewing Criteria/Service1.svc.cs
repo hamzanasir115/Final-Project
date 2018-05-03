@@ -192,26 +192,80 @@ namespace Grade_Uploading_and_viewing_Criteria
             return isfoundsubject;          
         }
 
-        public void AddSubject(string subjectname, string subjectcode)
+        public void AddSubject(string username, string subjectname, string subjectcode, string creditHour)
         {
-            SUBJECT sub = new SUBJECT();
-            sub.SubjectName1 = subjectname;
-            sub.SubjectCode1 = subjectcode;
-            SUBJECTDL.SubjectList.Add(sub);
+            bool isfound = false;
+            foreach (STUDENT stu in STUDENTDL.list)
+            {
+                if (stu.UserName1 == username)
+                {
+                    isfound = true;
+                }
+            }
+
+            if (isfound == true)
+            {
+                SUBJECT sub = new SUBJECT();
+                sub.Username = username;
+                sub.SubjectName1 = subjectname;
+                sub.SubjectCode1 = subjectcode;
+                sub.CreditHours1 = creditHour;
+                SUBJECTDL.SubjectList.Add(sub);
+                STUDENTDL.RegisterSubjectList.Add(sub);
+            }
+            
+            /*STUDENT s = new STUDENT();
+            s.Subject = subjectname;
+            s.UserName1 = username;
+            STUDENTDL.list.Add(s);
+            */
+            
+           /* foreach (STUDENT st in STUDENTDL.list)
+            {
+                if (st.UserName1 == username)
+                {
+                    STUDENTDL.list.Add(s);
+                }
+            }*/
         }
 
-        public bool IsSubjectAlreadyExist(string subjectname, string subjectcode)
+        public bool IsSubjectAlreadyExist(string username, string subjectname, string subjectcode)
         {
             bool isSubjectAlreadyExist = false;
             foreach (SUBJECT s in SUBJECTDL.SubjectList)
             {
-                if (s.SubjectName1 == subjectname)
+                if (s.SubjectName1 == subjectname && s.Username == username)
                 {
                     isSubjectAlreadyExist = true;
                 }
             }
             return isSubjectAlreadyExist;
         }
-        
+
+        public List<SUBJECT> showSubjects(string username)
+        {
+            /*List<STUDENTDL> dl = new List<STUDENTDL>();
+            foreach (STUDENT s in STUDENTDL.list)
+            {
+                if (s.UserName1 == username)
+                {
+                    STUDENTDL.subject.Add(s);
+                }
+            }
+
+            return dl;*/
+            //return STUDENTDL.RegisterSubjectList;
+            List<SUBJECT> sub = new List<SUBJECT>();
+            SUBJECT s = new SUBJECT();
+            foreach (SUBJECT subj in SUBJECTDL.SubjectList)
+            {
+                if (subj.Username == username)
+                {
+                    sub.Add(subj);
+                }
+            }
+            return sub;
+
+        }
     }
 }

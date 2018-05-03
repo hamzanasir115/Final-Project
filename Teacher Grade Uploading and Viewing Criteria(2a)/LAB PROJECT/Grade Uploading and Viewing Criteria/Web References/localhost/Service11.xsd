@@ -240,8 +240,10 @@
   <xs:element name="AddSubject">
     <xs:complexType>
       <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="subjectname" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="subjectcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="creditHour" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -253,6 +255,7 @@
   <xs:element name="IsSubjectAlreadyExist">
     <xs:complexType>
       <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="subjectname" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="subjectcode" nillable="true" type="xs:string" />
       </xs:sequence>
@@ -262,6 +265,20 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="IsSubjectAlreadyExistResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="showSubjects">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="showSubjectsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Grade_Uploading_and_viewing_Criteria" minOccurs="0" name="showSubjectsResult" nillable="true" type="q3:ArrayOfSUBJECT" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
