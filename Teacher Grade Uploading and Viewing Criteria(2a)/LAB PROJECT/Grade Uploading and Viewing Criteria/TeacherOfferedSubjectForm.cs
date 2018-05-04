@@ -53,10 +53,10 @@ namespace Grade_Uploading_and_Viewing_Criteria
             bool isalreadyexist;
             bool isalreadyexistpassed;
             ser.isTeacherSubAlreadyExist(txtusername.Text, cmbofferedsubjects.Text, cmbsubjectcode.Text, out isalreadyexist, out isalreadyexistpassed);
-           // bool isValudTeacherResultSpecified;
-            //bool isValidTeacherResult;
-            //ser.isValidTeacher(txtusername.Text, out isValidTeacherResult, out isValudTeacherResultSpecified);
-            if (isalreadyexist)
+            bool isValudTeacherResultSpecified;
+            bool isValidTeacherResult;
+            ser.isValidTeacher(txtusername.Text, out isValidTeacherResult, out isValudTeacherResultSpecified);
+            if (isalreadyexist && isValidTeacherResult)
             {
                 MessageBox.Show("Subject is already registered ");
                 cmbsubjectcode.Text = "";
@@ -65,49 +65,56 @@ namespace Grade_Uploading_and_Viewing_Criteria
             }
             else
             {
-                if (cmbofferedsubjects.Text == sub1.Text && cmbsubjectcode.Text == code1.Text && txtcredithours.Text == label6.Text)
+                if (isValidTeacherResult)
                 {
-                    ser.AddTeacherRegisteredSubject(txtusername.Text, cmbofferedsubjects.Text, cmbsubjectcode.Text, txtcredithours.Text);
-                    MessageBox.Show("OOP has been registered");
-                    cmbsubjectcode.Text = "";
-                    cmbofferedsubjects.Text = "";
-                    txtcredithours.Text = "";
-                }
-                else if (cmbofferedsubjects.Text == sub2.Text && cmbsubjectcode.Text == code2.Text && txtcredithours.Text == label6.Text)
-                {
-                    ser.AddTeacherRegisteredSubject(txtusername.Text, cmbofferedsubjects.Text, cmbsubjectcode.Text, txtcredithours.Text);
-                    MessageBox.Show("PF has been registered");
-                    cmbsubjectcode.Text = "";
-                    cmbofferedsubjects.Text = "";
-                    txtcredithours.Text = "";
-                }
-                else if (cmbsubjectcode.Text == code3.Text && cmbofferedsubjects.Text == sub3.Text && txtcredithours.Text == label6.Text)
-                {
-                    ser.AddTeacherRegisteredSubject(txtusername.Text, cmbofferedsubjects.Text, cmbsubjectcode.Text, txtcredithours.Text);
-                    MessageBox.Show("ICS has been registered");
-                    cmbsubjectcode.Text = "";
-                    cmbofferedsubjects.Text = "";
-                    txtcredithours.Text = "";
-                }
-                else if (cmbofferedsubjects.Text == lblDiscreteMathematics.Text && cmbsubjectcode.Text == code4.Text && txtcredithours.Text == label6.Text)
-                {
-                    ser.AddTeacherRegisteredSubject(txtusername.Text, cmbofferedsubjects.Text, cmbsubjectcode.Text, txtcredithours.Text);
-                    MessageBox.Show("DM has been registered");
-                    cmbsubjectcode.Text = "";
-                    cmbofferedsubjects.Text = "";
-                    txtcredithours.Text = "";
-                }
-                else if (cmbofferedsubjects.Text == sub5.Text && cmbsubjectcode.Text == code5.Text && txtcredithours.Text == label6.Text)
-                {
-                    ser.AddTeacherRegisteredSubject(txtusername.Text, cmbofferedsubjects.Text, cmbsubjectcode.Text, txtcredithours.Text);
-                    MessageBox.Show("DLD has been registered");
-                    cmbsubjectcode.Text = "";
-                    cmbofferedsubjects.Text = "";
-                    txtcredithours.Text = "";
+                    if (cmbofferedsubjects.Text == sub1.Text && cmbsubjectcode.Text == code1.Text && txtcredithours.Text == label6.Text)
+                    {
+                        ser.AddTeacherRegisteredSubject(txtusername.Text, cmbofferedsubjects.Text, cmbsubjectcode.Text, txtcredithours.Text);
+                        MessageBox.Show("OOP has been registered");
+                        cmbsubjectcode.Text = "";
+                        cmbofferedsubjects.Text = "";
+                        txtcredithours.Text = "";
+                    }
+                    else if (cmbofferedsubjects.Text == sub2.Text && cmbsubjectcode.Text == code2.Text && txtcredithours.Text == label6.Text)
+                    {
+                        ser.AddTeacherRegisteredSubject(txtusername.Text, cmbofferedsubjects.Text, cmbsubjectcode.Text, txtcredithours.Text);
+                        MessageBox.Show("PF has been registered");
+                        cmbsubjectcode.Text = "";
+                        cmbofferedsubjects.Text = "";
+                        txtcredithours.Text = "";
+                    }
+                    else if (cmbsubjectcode.Text == code3.Text && cmbofferedsubjects.Text == sub3.Text && txtcredithours.Text == label6.Text)
+                    {
+                        ser.AddTeacherRegisteredSubject(txtusername.Text, cmbofferedsubjects.Text, cmbsubjectcode.Text, txtcredithours.Text);
+                        MessageBox.Show("ICS has been registered");
+                        cmbsubjectcode.Text = "";
+                        cmbofferedsubjects.Text = "";
+                        txtcredithours.Text = "";
+                    }
+                    else if (cmbofferedsubjects.Text == lblDiscreteMathematics.Text && cmbsubjectcode.Text == code4.Text && txtcredithours.Text == label6.Text)
+                    {
+                        ser.AddTeacherRegisteredSubject(txtusername.Text, cmbofferedsubjects.Text, cmbsubjectcode.Text, txtcredithours.Text);
+                        MessageBox.Show("DM has been registered");
+                        cmbsubjectcode.Text = "";
+                        cmbofferedsubjects.Text = "";
+                        txtcredithours.Text = "";
+                    }
+                    else if (cmbofferedsubjects.Text == sub5.Text && cmbsubjectcode.Text == code5.Text && txtcredithours.Text == label6.Text)
+                    {
+                        ser.AddTeacherRegisteredSubject(txtusername.Text, cmbofferedsubjects.Text, cmbsubjectcode.Text, txtcredithours.Text);
+                        MessageBox.Show("DLD has been registered");
+                        cmbsubjectcode.Text = "";
+                        cmbofferedsubjects.Text = "";
+                        txtcredithours.Text = "";
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid Data");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Invalid Data");
+                    MessageBox.Show("Invalid User");
                 }
             }
         }
