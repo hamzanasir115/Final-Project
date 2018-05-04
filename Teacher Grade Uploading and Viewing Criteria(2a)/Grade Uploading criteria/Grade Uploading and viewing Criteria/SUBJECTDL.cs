@@ -13,6 +13,7 @@ namespace Grade_Uploading_and_viewing_Criteria
     public class SUBJECTDL
     {
         public static List<SUBJECT> SubjectList = new List<SUBJECT>();
+        public static List<SUBJECT> TeacherSubList = new List<SUBJECT>();
         public static ArrayList subjectname = new ArrayList();
         public static ArrayList credithour = new ArrayList();
         public static ArrayList subjectcode = new ArrayList();

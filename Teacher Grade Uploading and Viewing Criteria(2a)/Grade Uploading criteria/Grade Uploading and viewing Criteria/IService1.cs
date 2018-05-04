@@ -28,6 +28,8 @@ namespace Grade_Uploading_and_viewing_Criteria
         bool IsLoginTeacher(string username, string password);
 
         [OperationContract]
+        bool TeacherLogout();
+        [OperationContract]
         bool Login(string username, string pass);
 
         [OperationContract]
@@ -43,7 +45,8 @@ namespace Grade_Uploading_and_viewing_Criteria
         bool ValidReset(string username, string ques, string answer);
 
         // TODO: Add your service operations here
-
+        
+        
         [OperationContract]
         bool SetPassword(string username,  string ques, string ans);
 
@@ -63,13 +66,21 @@ namespace Grade_Uploading_and_viewing_Criteria
         void AddSubject(string username, string subjectname, string subjectcode, string creditHour);
         [OperationContract]
         bool IsSubjectAlreadyExist(string username, string subjectname, string subjectcode);
-       /* [OperationContract]
-        List<string> ShowSubjects(string username);
-        */
+
+        [OperationContract]
+        bool isTeacherSubAlreadyExist(string username, string subjectname, string subjectcode);
+        [OperationContract]
+        void AddTeacherRegisteredSubject(string username, string SubjectName, string SubjectCode, string CreditHour);
 
         [OperationContract]
         List<SUBJECT> showSubjects(string username);
 
+        [OperationContract]
+        List<SUBJECT> TeacherShowSubject(string username);
+
+        [OperationContract]
+        bool isValidTeacher(string username);
+        
 
     }
 

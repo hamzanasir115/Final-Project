@@ -120,6 +120,18 @@
     <Compile Include="TeacherLoginView.Designer.cs">
       <DependentUpon>TeacherLoginView.cs</DependentUpon>
     </Compile>
+    <Compile Include="TeacherOfferedSubjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherOfferedSubjectForm.Designer.cs">
+      <DependentUpon>TeacherOfferedSubjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherRegisteredSubjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherRegisteredSubjects.Designer.cs">
+      <DependentUpon>TeacherRegisteredSubjects.cs</DependentUpon>
+    </Compile>
     <Compile Include="TeacherRegistrationform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +143,12 @@
     </Compile>
     <Compile Include="TeacherResetPassword.Designer.cs">
       <DependentUpon>TeacherResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherViewSubjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherViewSubjects.Designer.cs">
+      <DependentUpon>TeacherViewSubjects.cs</DependentUpon>
     </Compile>
     <Compile Include="Web References\localhost\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -182,11 +200,20 @@
     <EmbeddedResource Include="TeacherLoginView.resx">
       <DependentUpon>TeacherLoginView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TeacherOfferedSubjectForm.resx">
+      <DependentUpon>TeacherOfferedSubjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherRegisteredSubjects.resx">
+      <DependentUpon>TeacherRegisteredSubjects.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TeacherRegistrationform.resx">
       <DependentUpon>TeacherRegistrationform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherResetPassword.resx">
       <DependentUpon>TeacherResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherViewSubjects.resx">
+      <DependentUpon>TeacherViewSubjects.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

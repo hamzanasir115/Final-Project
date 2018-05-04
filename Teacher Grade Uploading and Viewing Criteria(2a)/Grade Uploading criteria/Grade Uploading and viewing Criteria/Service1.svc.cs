@@ -105,17 +105,31 @@ namespace Grade_Uploading_and_viewing_Criteria
         public bool IsLoginTeacher(string username, string password)
         {
             bool isfound = false;
+            TEACHER teach = new TEACHER();
             foreach (TEACHER t in TEACHERDL.TeacherList)
             {
                 if (t.UserName1 == username && t.Password1 == password)
                 {
                     isfound = true;
-                }
+                    TEACHERDL.userName.Clear();
+                    teach.UserName1 = username;
+                    TEACHERDL.userName.Add(teach);
+                }    
             }
             return isfound;
 
         }
 
+        public bool TeacherLogout()
+        {
+            bool istrue = false;
+            TEACHERDL.userName.Clear();
+            if (TEACHERDL.userName.Count == 0)
+            {
+                istrue = true;
+            }
+            return istrue;
+        }
         public bool IsAlreadyExist(string username, string pass, string ques, string answer)
         {
             bool x = false;
@@ -128,6 +142,7 @@ namespace Grade_Uploading_and_viewing_Criteria
             }
             return x;
         }
+
 
         public bool IsTeacherAlreadyExists(string username, string password)
         {
@@ -213,20 +228,6 @@ namespace Grade_Uploading_and_viewing_Criteria
                 SUBJECTDL.SubjectList.Add(sub);
                 STUDENTDL.RegisterSubjectList.Add(sub);
             }
-            
-            /*STUDENT s = new STUDENT();
-            s.Subject = subjectname;
-            s.UserName1 = username;
-            STUDENTDL.list.Add(s);
-            */
-            
-           /* foreach (STUDENT st in STUDENTDL.list)
-            {
-                if (st.UserName1 == username)
-                {
-                    STUDENTDL.list.Add(s);
-                }
-            }*/
         }
 
         public bool IsSubjectAlreadyExist(string username, string subjectname, string subjectcode)
@@ -242,19 +243,20 @@ namespace Grade_Uploading_and_viewing_Criteria
             return isSubjectAlreadyExist;
         }
 
-        public List<SUBJECT> showSubjects(string username)
+        public bool isTeacherSubAlreadyExist(string username, string subjectname, string subjectcode)
         {
-            /*List<STUDENTDL> dl = new List<STUDENTDL>();
-            foreach (STUDENT s in STUDENTDL.list)
+            bool isSubjectExist = false;
+            foreach (SUBJECT sub in SUBJECTDL.TeacherSubList)
             {
-                if (s.UserName1 == username)
+                if (sub.SubjectName1 == subjectname && sub.Username == username)
                 {
-                    STUDENTDL.subject.Add(s);
+                    isSubjectExist = true;
                 }
             }
-
-            return dl;*/
-            //return STUDENTDL.RegisterSubjectList;
+            return isSubjectExist;
+        }
+        public List<SUBJECT> showSubjects(string username)
+        {
             List<SUBJECT> sub = new List<SUBJECT>();
             SUBJECT s = new SUBJECT();
             foreach (SUBJECT subj in SUBJECTDL.SubjectList)
@@ -267,5 +269,45 @@ namespace Grade_Uploading_and_viewing_Criteria
             return sub;
 
         }
+
+        public List<SUBJECT> TeacherShowSubject(string username)
+        {
+            List<SUBJECT> sub = new List<SUBJECT>();
+            foreach (SUBJECT subj in SUBJECTDL.TeacherSubList)
+            {
+                if (subj.Username == username)
+                {
+                    sub.Add(subj);
+                }
+            }
+            return sub;
+        }
+
+
+        public bool isValidTeacher(string username)
+        {
+            
+            bool isfound = false;
+            foreach (TEACHER t in TEACHERDL.userName)
+            {
+                if (t.UserName1== username)
+                {
+                    isfound = true;
+                }
+            }
+            return isfound;
+        }
+
+        public void AddTeacherRegisteredSubject(string username, string SubjectName, string SubjectCode, string CreditHour)
+        {
+            SUBJECT subj = new SUBJECT();
+            subj.Username = username;
+            subj.SubjectCode1 = SubjectCode;
+            subj.SubjectName1 = SubjectName;
+            subj.CreditHours1 = CreditHour;
+            SUBJECTDL.TeacherSubList.Add(subj);
+        }
+
+        
     }
 }

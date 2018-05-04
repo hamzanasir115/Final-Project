@@ -19,14 +19,39 @@ namespace Grade_Uploading_and_Viewing_Criteria
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            TeacherLoginform frm = new TeacherLoginform();
-            this.Hide();
-            frm.Show();
+            localhost.Service1 ser = new localhost.Service1();
+            bool TeacherLogoutResult;
+            bool TeacherLogoutResultSpecified;
+            ser.TeacherLogout(out TeacherLogoutResult, out TeacherLogoutResultSpecified);
+            if (TeacherLogoutResult)
+            {
+                TeacherLoginform frm = new TeacherLoginform();
+                this.Hide();
+                frm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Something went wrong");
+            }
         }
 
         private void cmbsubjects_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TeacherOfferedSubjectForm form = new TeacherOfferedSubjectForm();
+            form.Show();
+            this.Hide();
+        }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            TeacherRegisteredSubjects form = new TeacherRegisteredSubjects();
+            form.Show();
+            this.Hide();
         }
     }
 }

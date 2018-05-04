@@ -28,70 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbsubjects = new System.Windows.Forms.ComboBox();
             this.btnView = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Subjects";
-            // 
-            // cmbsubjects
-            // 
-            this.cmbsubjects.FormattingEnabled = true;
-            this.cmbsubjects.Location = new System.Drawing.Point(113, 41);
-            this.cmbsubjects.Name = "cmbsubjects";
-            this.cmbsubjects.Size = new System.Drawing.Size(121, 21);
-            this.cmbsubjects.TabIndex = 1;
-            this.cmbsubjects.SelectedIndexChanged += new System.EventHandler(this.cmbsubjects_SelectedIndexChanged);
             // 
             // btnView
             // 
-            this.btnView.Location = new System.Drawing.Point(159, 103);
+            this.btnView.Location = new System.Drawing.Point(81, 47);
             this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(75, 23);
+            this.btnView.Size = new System.Drawing.Size(142, 23);
             this.btnView.TabIndex = 2;
-            this.btnView.Text = "View";
+            this.btnView.Text = "View Registered Subjects";
             this.btnView.UseVisualStyleBackColor = true;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(47, 103);
+            this.btnLogout.Location = new System.Drawing.Point(80, 136);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(75, 23);
+            this.btnLogout.Size = new System.Drawing.Size(142, 25);
             this.btnLogout.TabIndex = 3;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(81, 90);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(142, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Offered subject";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // TeacherLoginView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnView);
-            this.Controls.Add(this.cmbsubjects);
-            this.Controls.Add(this.label1);
             this.Name = "TeacherLoginView";
             this.Text = "TeacherLoginView";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cmbsubjects;
         private System.Windows.Forms.Button btnView;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button button1;
     }
 }

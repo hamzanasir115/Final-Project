@@ -37,6 +37,12 @@
   <wsdl:message name="IService1_IsLoginTeacher_OutputMessage">
     <wsdl:part name="parameters" element="tns:IsLoginTeacherResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_TeacherLogout_InputMessage">
+    <wsdl:part name="parameters" element="tns:TeacherLogout" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TeacherLogout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TeacherLogoutResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_Login_InputMessage">
     <wsdl:part name="parameters" element="tns:Login" />
   </wsdl:message>
@@ -115,11 +121,35 @@
   <wsdl:message name="IService1_IsSubjectAlreadyExist_OutputMessage">
     <wsdl:part name="parameters" element="tns:IsSubjectAlreadyExistResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_isTeacherSubAlreadyExist_InputMessage">
+    <wsdl:part name="parameters" element="tns:isTeacherSubAlreadyExist" />
+  </wsdl:message>
+  <wsdl:message name="IService1_isTeacherSubAlreadyExist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:isTeacherSubAlreadyExistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddTeacherRegisteredSubject_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddTeacherRegisteredSubject" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddTeacherRegisteredSubject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddTeacherRegisteredSubjectResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_showSubjects_InputMessage">
     <wsdl:part name="parameters" element="tns:showSubjects" />
   </wsdl:message>
   <wsdl:message name="IService1_showSubjects_OutputMessage">
     <wsdl:part name="parameters" element="tns:showSubjectsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TeacherShowSubject_InputMessage">
+    <wsdl:part name="parameters" element="tns:TeacherShowSubject" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TeacherShowSubject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TeacherShowSubjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_isValidTeacher_InputMessage">
+    <wsdl:part name="parameters" element="tns:isValidTeacher" />
+  </wsdl:message>
+  <wsdl:message name="IService1_isValidTeacher_OutputMessage">
+    <wsdl:part name="parameters" element="tns:isValidTeacherResponse" />
   </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="IsAlreadyExist">
@@ -141,6 +171,10 @@
     <wsdl:operation name="IsLoginTeacher">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/IsLoginTeacher" message="tns:IService1_IsLoginTeacher_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/IsLoginTeacherResponse" message="tns:IService1_IsLoginTeacher_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TeacherLogout">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TeacherLogout" message="tns:IService1_TeacherLogout_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TeacherLogoutResponse" message="tns:IService1_TeacherLogout_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="Login">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/Login" message="tns:IService1_Login_InputMessage" />
@@ -194,9 +228,25 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/IsSubjectAlreadyExist" message="tns:IService1_IsSubjectAlreadyExist_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/IsSubjectAlreadyExistResponse" message="tns:IService1_IsSubjectAlreadyExist_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="isTeacherSubAlreadyExist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/isTeacherSubAlreadyExist" message="tns:IService1_isTeacherSubAlreadyExist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/isTeacherSubAlreadyExistResponse" message="tns:IService1_isTeacherSubAlreadyExist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTeacherRegisteredSubject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddTeacherRegisteredSubject" message="tns:IService1_AddTeacherRegisteredSubject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddTeacherRegisteredSubjectResponse" message="tns:IService1_AddTeacherRegisteredSubject_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="showSubjects">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/showSubjects" message="tns:IService1_showSubjects_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/showSubjectsResponse" message="tns:IService1_showSubjects_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TeacherShowSubject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TeacherShowSubject" message="tns:IService1_TeacherShowSubject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TeacherShowSubjectResponse" message="tns:IService1_TeacherShowSubject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="isValidTeacher">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/isValidTeacher" message="tns:IService1_isValidTeacher_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/isValidTeacherResponse" message="tns:IService1_isValidTeacher_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -239,6 +289,15 @@
     </wsdl:operation>
     <wsdl:operation name="IsLoginTeacher">
       <soap:operation soapAction="http://tempuri.org/IService1/IsLoginTeacher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TeacherLogout">
+      <soap:operation soapAction="http://tempuri.org/IService1/TeacherLogout" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -363,8 +422,44 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="isTeacherSubAlreadyExist">
+      <soap:operation soapAction="http://tempuri.org/IService1/isTeacherSubAlreadyExist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTeacherRegisteredSubject">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddTeacherRegisteredSubject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="showSubjects">
       <soap:operation soapAction="http://tempuri.org/IService1/showSubjects" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TeacherShowSubject">
+      <soap:operation soapAction="http://tempuri.org/IService1/TeacherShowSubject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isValidTeacher">
+      <soap:operation soapAction="http://tempuri.org/IService1/isValidTeacher" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

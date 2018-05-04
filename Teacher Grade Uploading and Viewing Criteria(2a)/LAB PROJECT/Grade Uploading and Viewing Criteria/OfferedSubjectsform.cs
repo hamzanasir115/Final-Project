@@ -74,7 +74,7 @@ namespace Grade_Uploading_and_Viewing_Criteria
                 }
                 else
                 {
-                    MessageBox.Show("Invalid Subject i.e. either SubjectName or SubjectCode doesn't match.Please select a suitable one");
+                    MessageBox.Show("Invalid Subject i.e. either SubjectName or SubjectCode or CreditHour doesn't match.Please select a suitable one");
                 }
             }
         }
