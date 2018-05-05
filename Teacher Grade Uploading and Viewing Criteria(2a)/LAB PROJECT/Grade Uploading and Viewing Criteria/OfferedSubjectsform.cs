@@ -22,59 +22,69 @@ namespace Grade_Uploading_and_Viewing_Criteria
             localhost.Service1 service = new localhost.Service1();
             bool isalreadyexist;
             bool isalreadyexistpassed;
+            bool isValidStudentResult;
+            bool isValidStudentResultSpecified;
             service.IsSubjectAlreadyExist(txtUserName.Text, cmbSubject.Text, cmbCode.Text, out isalreadyexist, out isalreadyexistpassed);
-            if(isalreadyexist)
+            service.isValidStudent(txtUserName.Text, out isValidStudentResult, out isValidStudentResultSpecified);
+            if(isalreadyexist && isValidStudentResult)
             {
-                MessageBox.Show("Subject is added already");
+                MessageBox.Show("Subject has been already registered");
                 cmbSubject.Text = "";
                 cmbCode.Text = "";
                 txtCreditHour.Text = "";
             }
             else
             {
-                if(cmbSubject.Text == sub1.Text && cmbCode.Text == code1.Text && txtCreditHour.Text == label6.Text)
+                if (isValidStudentResult)
                 {
-                    service.AddSubject(txtUserName.Text, cmbSubject.Text, cmbCode.Text, txtCreditHour.Text);
-                    MessageBox.Show("Subject has been added");
-                    cmbSubject.Text = "";
-                    cmbCode.Text = "";
-                    txtCreditHour.Text = "";
-                }
-                else if (cmbSubject.Text == sub2.Text && cmbCode.Text == code2.Text && txtCreditHour.Text == label6.Text)
-                {
-                    service.AddSubject(txtUserName.Text, cmbSubject.Text, cmbCode.Text, txtCreditHour.Text);
-                    MessageBox.Show("Subject has been added");
-                    cmbSubject.Text = "";
-                    cmbCode.Text = "";
-                    txtCreditHour.Text = "";
-                }
-                else if (cmbSubject.Text == sub3.Text && cmbCode.Text == code3.Text && txtCreditHour.Text == label6.Text)
-                {
-                    service.AddSubject(txtUserName.Text,cmbSubject.Text, cmbCode.Text, txtCreditHour.Text);
-                    MessageBox.Show("Subject has been added");
-                    cmbSubject.Text = "";
-                    cmbCode.Text = "";
-                    txtCreditHour.Text = "";
-                }
-                else if (cmbSubject.Text == label4.Text && cmbCode.Text == code4.Text && txtCreditHour.Text == label6.Text)
-                {
-                    service.AddSubject(txtUserName.Text,cmbSubject.Text, cmbCode.Text, txtCreditHour.Text);
-                    MessageBox.Show("Subject has been added");
-                    cmbSubject.Text = "";
-                    cmbCode.Text = "";
-                    txtCreditHour.Text = "";
-                }
-                else if (cmbSubject.Text == sub5.Text && cmbCode.Text == code5.Text && txtCreditHour.Text == label6.Text)
-                {
-                    service.AddSubject(txtUserName.Text,cmbSubject.Text, cmbCode.Text, txtCreditHour.Text);
-                    MessageBox.Show("Subject has been added");
-                    cmbSubject.Text = "";
-                    cmbCode.Text = "";
-                    txtCreditHour.Text = "";
+                    if (cmbSubject.Text == sub1.Text && cmbCode.Text == code1.Text && txtCreditHour.Text == label6.Text)
+                    {
+                        service.AddSubject(txtUserName.Text, cmbSubject.Text, cmbCode.Text, txtCreditHour.Text);
+                        MessageBox.Show("Subject has been added");
+                        cmbSubject.Text = "";
+                        cmbCode.Text = "";
+                        txtCreditHour.Text = "";
+                    }
+                    else if (cmbSubject.Text == sub2.Text && cmbCode.Text == code2.Text && txtCreditHour.Text == label6.Text)
+                    {
+                        service.AddSubject(txtUserName.Text, cmbSubject.Text, cmbCode.Text, txtCreditHour.Text);
+                        MessageBox.Show("Subject has been added");
+                        cmbSubject.Text = "";
+                        cmbCode.Text = "";
+                        txtCreditHour.Text = "";
+                    }
+                    else if (cmbSubject.Text == sub3.Text && cmbCode.Text == code3.Text && txtCreditHour.Text == label6.Text)
+                    {
+                        service.AddSubject(txtUserName.Text, cmbSubject.Text, cmbCode.Text, txtCreditHour.Text);
+                        MessageBox.Show("Subject has been added");
+                        cmbSubject.Text = "";
+                        cmbCode.Text = "";
+                        txtCreditHour.Text = "";
+                    }
+                    else if (cmbSubject.Text == label4.Text && cmbCode.Text == code4.Text && txtCreditHour.Text == label6.Text)
+                    {
+                        service.AddSubject(txtUserName.Text, cmbSubject.Text, cmbCode.Text, txtCreditHour.Text);
+                        MessageBox.Show("Subject has been added");
+                        cmbSubject.Text = "";
+                        cmbCode.Text = "";
+                        txtCreditHour.Text = "";
+                    }
+                    else if (cmbSubject.Text == sub5.Text && cmbCode.Text == code5.Text && txtCreditHour.Text == label6.Text)
+                    {
+                        service.AddSubject(txtUserName.Text, cmbSubject.Text, cmbCode.Text, txtCreditHour.Text);
+                        MessageBox.Show("Subject has been added");
+                        cmbSubject.Text = "";
+                        cmbCode.Text = "";
+                        txtCreditHour.Text = "";
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid Subject i.e. either SubjectName or SubjectCode or CreditHour doesn't match.Please select a suitable one");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Invalid Subject i.e. either SubjectName or SubjectCode or CreditHour doesn't match.Please select a suitable one");
+                    MessageBox.Show("Invalid Student");
                 }
             }
         }

@@ -29,6 +29,10 @@ namespace Grade_Uploading_and_viewing_Criteria
 
         [OperationContract]
         bool TeacherLogout();
+
+        [OperationContract]
+        bool StudentLogout();
+
         [OperationContract]
         bool Login(string username, string pass);
 
@@ -80,6 +84,9 @@ namespace Grade_Uploading_and_viewing_Criteria
 
         [OperationContract]
         bool isValidTeacher(string username);
+
+        [OperationContract]
+        bool isValidStudent(string username);
         
 
     }

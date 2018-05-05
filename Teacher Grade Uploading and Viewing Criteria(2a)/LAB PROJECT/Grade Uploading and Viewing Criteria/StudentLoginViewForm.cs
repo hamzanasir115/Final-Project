@@ -31,9 +31,22 @@ namespace Grade_Uploading_and_Viewing_Criteria
 
         private void button6_Click(object sender, EventArgs e)
         {
-            StudentLoginform login = new StudentLoginform();
-            this.Hide();
-            login.Show();
+            
+            localhost.Service1 ser = new localhost.Service1();
+            bool StudentLogoutResult;
+            bool StudentLogoutResultSpecified;
+            ser.StudentLogout(out StudentLogoutResult, out StudentLogoutResultSpecified);
+            if (StudentLogoutResult)
+            {
+                StudentLoginform login = new StudentLoginform();
+                this.Hide();
+                login.Show();
+            }
+            else
+            {
+                MessageBox.Show("Something went wrong");
+            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

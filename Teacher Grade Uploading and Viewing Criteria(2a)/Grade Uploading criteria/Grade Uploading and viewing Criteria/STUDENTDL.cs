@@ -17,7 +17,7 @@ namespace Grade_Uploading_and_viewing_Criteria
     public class STUDENTDL
     {
         public static List<STUDENT> list = new List<STUDENT>();
-        public static ArrayList username = new ArrayList();
+        public static List<STUDENT> username = new List<STUDENT>();
         public static ArrayList password = new ArrayList();
         public static ArrayList secretQ = new ArrayList();
         public static ArrayList answer = new ArrayList();

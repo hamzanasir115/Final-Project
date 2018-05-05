@@ -52,5 +52,10 @@ namespace Grade_Uploading_and_Viewing_Criteria
             form.Show();
             this.Hide();
         }
+
+        private void TeacherViewSubjects_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

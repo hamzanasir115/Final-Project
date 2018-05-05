@@ -40,25 +40,12 @@ namespace Grade_Uploading_and_viewing_Criteria
         {
             STUDENT std = new STUDENT();
             std.UserName1 = username;
-            STUDENTDL.username.Add(username);
             std.Password1 = password;
             STUDENTDL.password.Add(password);
             std.SecretQuestion1 = ques;
             STUDENTDL.secretQ.Add(ques);
             std.Answer1 = answer;
             STUDENTDL.answer.Add(answer);
-            /*bool x;
-            foreach (STUDENT s in STUDENTDL.list)
-            {
-                if (s.UserName1 == username)
-                {
-                    x = true;
-                }
-            }
-            if (x == true)
-            {
-                MessageBox.Show("User Already exists");
-            }*/
             STUDENTDL.list.Add(std);
         }
 
@@ -90,11 +77,15 @@ namespace Grade_Uploading_and_viewing_Criteria
 
         public bool isValidUser(string userName, string password)
         {
+            STUDENT stu = new STUDENT();
             bool isFound = false;
             foreach (STUDENT u in STUDENTDL.list)
             {
                 if (u.UserName1 == userName && u.Password1 == password)
                 {
+                    STUDENTDL.username.Clear();
+                    stu.UserName1 = userName;
+                    STUDENTDL.username.Add(stu);
                     isFound = true;
                 }
             }
@@ -130,6 +121,18 @@ namespace Grade_Uploading_and_viewing_Criteria
             }
             return istrue;
         }
+
+        public bool StudentLogout()
+        {
+            bool isFound = false;
+            STUDENTDL.username.Clear();
+            if (STUDENTDL.username.Count == 0)
+            {
+                isFound = true;
+            }
+            return isFound;
+        }
+
         public bool IsAlreadyExist(string username, string pass, string ques, string answer)
         {
             bool x = false;
@@ -291,6 +294,18 @@ namespace Grade_Uploading_and_viewing_Criteria
             foreach (TEACHER t in TEACHERDL.userName)
             {
                 if (t.UserName1== username)
+                {
+                    isfound = true;
+                }
+            }
+            return isfound;
+        }
+        public bool isValidStudent(string username)
+        {
+            bool isfound = false;
+            foreach (STUDENT s in STUDENTDL.username)
+            {
+                if (s.UserName1 == username)
                 {
                     isfound = true;
                 }

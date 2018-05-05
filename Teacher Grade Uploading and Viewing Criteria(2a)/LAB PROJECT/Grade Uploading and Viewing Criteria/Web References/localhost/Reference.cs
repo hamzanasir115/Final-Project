@@ -41,6 +41,8 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
         
         private System.Threading.SendOrPostCallback TeacherLogoutOperationCompleted;
         
+        private System.Threading.SendOrPostCallback StudentLogoutOperationCompleted;
+        
         private System.Threading.SendOrPostCallback LoginOperationCompleted;
         
         private System.Threading.SendOrPostCallback isValidUserOperationCompleted;
@@ -76,6 +78,8 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
         private System.Threading.SendOrPostCallback TeacherShowSubjectOperationCompleted;
         
         private System.Threading.SendOrPostCallback isValidTeacherOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback isValidStudentOperationCompleted;
         
         private bool useDefaultCredentialsSetExplicitly;
         
@@ -134,6 +138,9 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
         public event TeacherLogoutCompletedEventHandler TeacherLogoutCompleted;
         
         /// <remarks/>
+        public event StudentLogoutCompletedEventHandler StudentLogoutCompleted;
+        
+        /// <remarks/>
         public event LoginCompletedEventHandler LoginCompleted;
         
         /// <remarks/>
@@ -186,6 +193,9 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
         
         /// <remarks/>
         public event isValidTeacherCompletedEventHandler isValidTeacherCompleted;
+        
+        /// <remarks/>
+        public event isValidStudentCompletedEventHandler isValidStudentCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/IsAlreadyExist", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -378,6 +388,34 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
             if ((this.TeacherLogoutCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.TeacherLogoutCompleted(this, new TeacherLogoutCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/StudentLogout", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void StudentLogout(out bool StudentLogoutResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool StudentLogoutResultSpecified) {
+            object[] results = this.Invoke("StudentLogout", new object[0]);
+            StudentLogoutResult = ((bool)(results[0]));
+            StudentLogoutResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void StudentLogoutAsync() {
+            this.StudentLogoutAsync(null);
+        }
+        
+        /// <remarks/>
+        public void StudentLogoutAsync(object userState) {
+            if ((this.StudentLogoutOperationCompleted == null)) {
+                this.StudentLogoutOperationCompleted = new System.Threading.SendOrPostCallback(this.OnStudentLogoutOperationCompleted);
+            }
+            this.InvokeAsync("StudentLogout", new object[0], this.StudentLogoutOperationCompleted, userState);
+        }
+        
+        private void OnStudentLogoutOperationCompleted(object arg) {
+            if ((this.StudentLogoutCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.StudentLogoutCompleted(this, new StudentLogoutCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -960,6 +998,36 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/isValidStudent", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void isValidStudent([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username, out bool isValidStudentResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool isValidStudentResultSpecified) {
+            object[] results = this.Invoke("isValidStudent", new object[] {
+                        username});
+            isValidStudentResult = ((bool)(results[0]));
+            isValidStudentResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void isValidStudentAsync(string username) {
+            this.isValidStudentAsync(username, null);
+        }
+        
+        /// <remarks/>
+        public void isValidStudentAsync(string username, object userState) {
+            if ((this.isValidStudentOperationCompleted == null)) {
+                this.isValidStudentOperationCompleted = new System.Threading.SendOrPostCallback(this.OnisValidStudentOperationCompleted);
+            }
+            this.InvokeAsync("isValidStudent", new object[] {
+                        username}, this.isValidStudentOperationCompleted, userState);
+        }
+        
+        private void OnisValidStudentOperationCompleted(object arg) {
+            if ((this.isValidStudentCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.isValidStudentCompleted(this, new isValidStudentCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -1215,6 +1283,40 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
         
         /// <remarks/>
         public bool TeacherLogoutResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    public delegate void StudentLogoutCompletedEventHandler(object sender, StudentLogoutCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class StudentLogoutCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal StudentLogoutCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool StudentLogoutResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool StudentLogoutResultSpecified {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((bool)(this.results[1]));
@@ -1653,6 +1755,40 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
         
         /// <remarks/>
         public bool isValidTeacherResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    public delegate void isValidStudentCompletedEventHandler(object sender, isValidStudentCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class isValidStudentCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal isValidStudentCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool isValidStudentResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool isValidStudentResultSpecified {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((bool)(this.results[1]));

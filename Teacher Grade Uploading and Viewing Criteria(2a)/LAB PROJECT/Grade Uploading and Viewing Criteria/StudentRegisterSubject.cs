@@ -20,10 +20,20 @@ namespace Grade_Uploading_and_Viewing_Criteria
         private void btnShowSubject_Click(object sender, EventArgs e)
         {
             localhost.Service1 ser = new localhost.Service1();
-            BindingSource source = new BindingSource();
-            ser.showSubjects(txtUserName.Text);
-            source.DataSource = ser.showSubjects(txtUserName.Text);
-            dataGridView1.DataSource = source;
+            bool isValidStudentResult;
+            bool isValidStudentResultSpecified;
+            ser.isValidStudent(txtUserName.Text, out isValidStudentResult, out isValidStudentResultSpecified);
+            if (isValidStudentResult)
+            {
+                BindingSource source = new BindingSource();
+                ser.showSubjects(txtUserName.Text);
+                source.DataSource = ser.showSubjects(txtUserName.Text);
+                dataGridView1.DataSource = source;
+            }
+            else
+            {
+                MessageBox.Show("Invalid Student");
+            }
             
         }
 

@@ -88,6 +88,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="StudentLogout">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StudentLogoutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="StudentLogoutResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="Login">
     <xs:complexType>
       <xs:sequence>
@@ -350,6 +362,20 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="isValidTeacherResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="isValidStudent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="isValidStudentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isValidStudentResult" type="xs:boolean" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

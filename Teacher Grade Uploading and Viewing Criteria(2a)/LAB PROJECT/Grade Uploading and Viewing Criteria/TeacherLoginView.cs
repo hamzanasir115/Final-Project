@@ -31,7 +31,7 @@ namespace Grade_Uploading_and_Viewing_Criteria
             }
             else
             {
-                MessageBox.Show("Something went wrong");
+               
             }
         }
 
