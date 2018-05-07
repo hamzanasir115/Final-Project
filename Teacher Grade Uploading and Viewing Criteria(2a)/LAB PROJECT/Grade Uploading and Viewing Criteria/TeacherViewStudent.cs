@@ -39,6 +39,10 @@ namespace Grade_Uploading_and_Viewing_Criteria
                 source.DataSource = service.ShowBySubject(comboBox1.Text);
                 dataGridView1.DataSource = source;
             }
+            else
+            {
+                MessageBox.Show("Invalid Subject");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -47,6 +51,9 @@ namespace Grade_Uploading_and_Viewing_Criteria
             this.Hide();
             v.Show();
         }
+
+                 
+        
 
     }
 }

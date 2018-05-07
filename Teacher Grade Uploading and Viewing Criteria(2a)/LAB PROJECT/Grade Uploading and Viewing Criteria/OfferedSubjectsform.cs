@@ -105,7 +105,24 @@ namespace Grade_Uploading_and_Viewing_Criteria
 
         private void OfferedSubjectsform_Load(object sender, EventArgs e)
         {
-
+            label1.Hide();
+            label2.Hide();
+            label3.Hide();
+            sub1.Hide();
+            sub2.Hide();
+            sub3.Hide();
+            label4.Hide();
+            sub5.Hide();
+            code1.Hide();
+            code2.Hide();
+            code3.Hide();
+            code4.Hide();
+            code5.Hide();
+            label6.Hide();
+            label9.Hide();
+            label10.Hide();
+            label11.Hide();
+            label12.Hide();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

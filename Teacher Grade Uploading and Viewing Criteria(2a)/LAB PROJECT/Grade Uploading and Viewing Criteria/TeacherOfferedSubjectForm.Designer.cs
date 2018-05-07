@@ -267,6 +267,7 @@
             this.sub1.Size = new System.Drawing.Size(145, 13);
             this.sub1.TabIndex = 47;
             this.sub1.Text = "Object Oriented Programming";
+            this.sub1.Click += new System.EventHandler(this.sub1_Click);
             // 
             // lblcredithors
             // 

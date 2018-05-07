@@ -125,5 +125,10 @@ namespace Grade_Uploading_and_Viewing_Criteria
             form.Show();
             this.Hide();
         }
+
+        private void sub1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
