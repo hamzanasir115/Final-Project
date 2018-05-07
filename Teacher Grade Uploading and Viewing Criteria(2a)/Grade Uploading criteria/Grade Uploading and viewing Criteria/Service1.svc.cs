@@ -197,12 +197,12 @@ namespace Grade_Uploading_and_viewing_Criteria
             TEACHERDL.resetPassTeacher(username, pass);
         }
 
-        public bool isValidSubject(string subjectName, string subjectCode)
+        public bool isValidSubject(string subjectName)
         {
             bool isfoundsubject = false;
             foreach (SUBJECT s in SUBJECTDL.SubjectList)
             {
-                if (s.SubjectName1 == subjectName && s.SubjectCode1 == subjectCode)
+                if (s.SubjectName1 == subjectName)
                 {
                     isfoundsubject = true;
                 }
@@ -322,7 +322,20 @@ namespace Grade_Uploading_and_viewing_Criteria
             subj.CreditHours1 = CreditHour;
             SUBJECTDL.TeacherSubList.Add(subj);
         }
+        public List<SUBJECT> ShowBySubject(string subjectname)
+        {
+            List<SUBJECT> subject = new List<SUBJECT>();
+            foreach (SUBJECT sub in SUBJECTDL.SubjectList)
+            {
+                if (sub.SubjectName1 == subjectname)
+                {
+                    subject.Add(sub);                     
+                }
+            }
+            return subject;
+        }
+         
+       
 
-        
     }
 }

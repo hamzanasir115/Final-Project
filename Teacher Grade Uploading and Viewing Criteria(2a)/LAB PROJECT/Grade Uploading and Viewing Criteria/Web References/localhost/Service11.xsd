@@ -250,7 +250,6 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="subjectName" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="subjectCode" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -376,6 +375,20 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="isValidStudentResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ShowBySubject">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="subjectname" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ShowBySubjectResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Grade_Uploading_and_viewing_Criteria" minOccurs="0" name="ShowBySubjectResult" nillable="true" type="q5:ArrayOfSUBJECT" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

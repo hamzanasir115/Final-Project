@@ -144,6 +144,12 @@
     <Compile Include="TeacherResetPassword.Designer.cs">
       <DependentUpon>TeacherResetPassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="TeacherViewStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherViewStudent.Designer.cs">
+      <DependentUpon>TeacherViewStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="TeacherViewSubjects.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherResetPassword.resx">
       <DependentUpon>TeacherResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherViewStudent.resx">
+      <DependentUpon>TeacherViewStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherViewSubjects.resx">
       <DependentUpon>TeacherViewSubjects.cs</DependentUpon>

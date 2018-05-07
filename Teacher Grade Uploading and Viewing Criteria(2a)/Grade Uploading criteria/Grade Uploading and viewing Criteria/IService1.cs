@@ -65,7 +65,7 @@ namespace Grade_Uploading_and_viewing_Criteria
         void resetPassTeacher(string username, string pass);
 
         [OperationContract]
-        bool isValidSubject(string subjectName, string subjectCode);
+        bool isValidSubject(string subjectName);
         [OperationContract]
         void AddSubject(string username, string subjectname, string subjectcode, string creditHour);
         [OperationContract]
@@ -87,6 +87,10 @@ namespace Grade_Uploading_and_viewing_Criteria
 
         [OperationContract]
         bool isValidStudent(string username);
+
+        [OperationContract]
+        List<SUBJECT> ShowBySubject(string subjectname);
+        
         
 
     }
