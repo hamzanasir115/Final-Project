@@ -334,7 +334,42 @@ namespace Grade_Uploading_and_viewing_Criteria
             }
             return subject;
         }
-       
 
+        public bool UploadDMC(string stdname,string teachername,  string grade, string subject)
+        {
+            bool isfound = false;
+            foreach (SUBJECT s in SUBJECTDL.SubjectList )
+            {
+                if (s.Username == stdname)
+                {
+                    isfound = true;
+                }
+            }
+            DMC d = new DMC();
+            SUBJECT sub = new SUBJECT();
+            if (isfound == true)
+            {
+                d.StudentName1 = stdname;
+                d.TeacherName1 = teachername;
+                d.Subject = subject;
+                d.Grade = grade;
+                DMCDL.dmc.Add(d);
+            }
+            return isfound;
+        }
+
+        public List<DMC> TeacherViewDMC(string subject)
+        {
+            List<DMC> viewdmc = new List<DMC>();
+            foreach(DMC d in DMCDL.dmc)
+            {
+                if(d.Subject == subject)
+                {
+
+                    viewdmc.Add(d);
+                }
+            }
+            return viewdmc;
+        }
     }
 }

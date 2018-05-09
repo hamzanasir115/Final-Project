@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbsubject = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -36,19 +36,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cmbsubject
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbsubject.FormattingEnabled = true;
+            this.cmbsubject.Items.AddRange(new object[] {
             "Object Oriented Programming",
             "Programming Fundamentals",
             "Introduction to Computing",
             "Discrete Mathematical Structure",
             "Digital and Logic Design"});
-            this.comboBox1.Location = new System.Drawing.Point(227, 55);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(171, 21);
-            this.comboBox1.TabIndex = 0;
+            this.cmbsubject.Location = new System.Drawing.Point(227, 55);
+            this.cmbsubject.Name = "cmbsubject";
+            this.cmbsubject.Size = new System.Drawing.Size(171, 21);
+            this.cmbsubject.TabIndex = 0;
+            this.cmbsubject.SelectedIndexChanged += new System.EventHandler(this.cmbsubject_SelectedIndexChanged);
             // 
             // dataGridView1
             // 
@@ -57,6 +58,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(402, 179);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
             // 
             // label1
@@ -82,7 +84,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(28, 12);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(58, 23);
+            this.button2.Size = new System.Drawing.Size(31, 23);
             this.button2.TabIndex = 4;
             this.button2.Text = "←";
             this.button2.UseVisualStyleBackColor = true;
@@ -97,7 +99,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbsubject);
             this.Name = "TeacherViewStudent";
             this.Text = "TeacherViewStudent";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -108,7 +110,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbsubject;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;

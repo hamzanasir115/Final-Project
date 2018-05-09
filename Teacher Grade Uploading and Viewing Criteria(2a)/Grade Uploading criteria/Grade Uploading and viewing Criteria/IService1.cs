@@ -91,8 +91,11 @@ namespace Grade_Uploading_and_viewing_Criteria
         [OperationContract]
         List<SUBJECT> ShowBySubject(string subjectname);
 
-        
-        
+        [OperationContract]
+        bool UploadDMC(string stdname, string teachername, string grade, string subject);
+
+        [OperationContract]
+        List<DMC> TeacherViewDMC(string subject);
 
     }
 

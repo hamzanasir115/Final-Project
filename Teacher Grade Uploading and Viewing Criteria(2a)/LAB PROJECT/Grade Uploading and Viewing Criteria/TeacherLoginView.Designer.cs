@@ -31,6 +31,8 @@
             this.btnView = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnUploadDMC = new System.Windows.Forms.Button();
+            this.btnUploadReport = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnView
@@ -45,7 +47,7 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(80, 136);
+            this.btnLogout.Location = new System.Drawing.Point(81, 212);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(142, 25);
             this.btnLogout.TabIndex = 3;
@@ -55,7 +57,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(81, 90);
+            this.button1.Location = new System.Drawing.Point(82, 166);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(142, 23);
             this.button1.TabIndex = 4;
@@ -63,11 +65,32 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnUploadDMC
+            // 
+            this.btnUploadDMC.Location = new System.Drawing.Point(82, 88);
+            this.btnUploadDMC.Name = "btnUploadDMC";
+            this.btnUploadDMC.Size = new System.Drawing.Size(141, 23);
+            this.btnUploadDMC.TabIndex = 5;
+            this.btnUploadDMC.Text = "Upload DMC";
+            this.btnUploadDMC.UseVisualStyleBackColor = true;
+            this.btnUploadDMC.Click += new System.EventHandler(this.btnUploadDMC_Click);
+            // 
+            // btnUploadReport
+            // 
+            this.btnUploadReport.Location = new System.Drawing.Point(82, 128);
+            this.btnUploadReport.Name = "btnUploadReport";
+            this.btnUploadReport.Size = new System.Drawing.Size(141, 23);
+            this.btnUploadReport.TabIndex = 6;
+            this.btnUploadReport.Text = "Upload Report";
+            this.btnUploadReport.UseVisualStyleBackColor = true;
+            // 
             // TeacherLoginView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.btnUploadReport);
+            this.Controls.Add(this.btnUploadDMC);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnView);
@@ -82,5 +105,7 @@
         private System.Windows.Forms.Button btnView;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnUploadDMC;
+        private System.Windows.Forms.Button btnUploadReport;
     }
 }

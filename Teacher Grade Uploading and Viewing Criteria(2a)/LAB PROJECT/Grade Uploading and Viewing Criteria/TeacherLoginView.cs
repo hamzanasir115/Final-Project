@@ -53,5 +53,12 @@ namespace Grade_Uploading_and_Viewing_Criteria
             form.Show();
             this.Hide();
         }
+
+        private void btnUploadDMC_Click(object sender, EventArgs e)
+        {
+            TeacherUploadedDMCform form = new TeacherUploadedDMCform();
+            this.Hide();
+            form.Show();
+        }
     }
 }

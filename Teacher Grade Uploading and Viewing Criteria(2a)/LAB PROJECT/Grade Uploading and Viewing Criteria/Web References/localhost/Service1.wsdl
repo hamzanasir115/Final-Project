@@ -169,6 +169,18 @@
   <wsdl:message name="IService1_ShowBySubject_OutputMessage">
     <wsdl:part name="parameters" element="tns:ShowBySubjectResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_UploadDMC_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadDMC" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UploadDMC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadDMCResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TeacherViewDMC_InputMessage">
+    <wsdl:part name="parameters" element="tns:TeacherViewDMC" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TeacherViewDMC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TeacherViewDMCResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="IsAlreadyExist">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/IsAlreadyExist" message="tns:IService1_IsAlreadyExist_InputMessage" />
@@ -277,6 +289,14 @@
     <wsdl:operation name="ShowBySubject">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/ShowBySubject" message="tns:IService1_ShowBySubject_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/ShowBySubjectResponse" message="tns:IService1_ShowBySubject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadDMC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UploadDMC" message="tns:IService1_UploadDMC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UploadDMCResponse" message="tns:IService1_UploadDMC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TeacherViewDMC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TeacherViewDMC" message="tns:IService1_TeacherViewDMC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TeacherViewDMCResponse" message="tns:IService1_TeacherViewDMC_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -517,6 +537,24 @@
     </wsdl:operation>
     <wsdl:operation name="ShowBySubject">
       <soap:operation soapAction="http://tempuri.org/IService1/ShowBySubject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadDMC">
+      <soap:operation soapAction="http://tempuri.org/IService1/UploadDMC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TeacherViewDMC">
+      <soap:operation soapAction="http://tempuri.org/IService1/TeacherViewDMC" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -22,4 +22,19 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="SUBJECT" nillable="true" type="tns:SUBJECT" />
+  <xs:complexType name="ArrayOfDMC">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DMC" nillable="true" type="tns:DMC" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDMC" nillable="true" type="tns:ArrayOfDMC" />
+  <xs:complexType name="DMC">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Grade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StudentName1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TeacherName1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DMC" nillable="true" type="tns:DMC" />
 </xs:schema>

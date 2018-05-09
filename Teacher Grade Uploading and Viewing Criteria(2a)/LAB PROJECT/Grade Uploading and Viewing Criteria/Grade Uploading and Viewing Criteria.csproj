@@ -144,6 +144,18 @@
     <Compile Include="TeacherResetPassword.Designer.cs">
       <DependentUpon>TeacherResetPassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="TeacherUploadDMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherUploadDMC.Designer.cs">
+      <DependentUpon>TeacherUploadDMC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherUploadedDMCform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherUploadedDMCform.Designer.cs">
+      <DependentUpon>TeacherUploadedDMCform.cs</DependentUpon>
+    </Compile>
     <Compile Include="TeacherViewStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -218,6 +230,12 @@
     <EmbeddedResource Include="TeacherResetPassword.resx">
       <DependentUpon>TeacherResetPassword.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TeacherUploadDMC.resx">
+      <DependentUpon>TeacherUploadDMC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherUploadedDMCform.resx">
+      <DependentUpon>TeacherUploadedDMCform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TeacherViewStudent.resx">
       <DependentUpon>TeacherViewStudent.cs</DependentUpon>
     </EmbeddedResource>
@@ -234,6 +252,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="Web References\localhost\CompositeType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\localhost\DMC.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\localhost\Reference.map">

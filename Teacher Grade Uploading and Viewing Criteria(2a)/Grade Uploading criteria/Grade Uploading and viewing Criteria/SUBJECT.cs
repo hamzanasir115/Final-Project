@@ -14,7 +14,7 @@ namespace Grade_Uploading_and_viewing_Criteria
             get { return username; }
             set { username = value; }
         }
-
+        
         private string SubjectName;
 
         public string SubjectName1

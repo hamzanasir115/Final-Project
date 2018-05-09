@@ -21,8 +21,8 @@ namespace Grade_Uploading_and_Viewing_Criteria
         {
             localhost.Service1 service = new localhost.Service1();
             BindingSource source = new BindingSource();
-            service.ShowBySubject(comboBox1.Text);
-            source.DataSource = service.ShowBySubject(comboBox1.Text);
+            service.ShowBySubject(cmbsubject.Text);
+            source.DataSource = service.ShowBySubject(cmbsubject.Text);
             dataGridView1.DataSource = source;
         }
 
@@ -31,12 +31,12 @@ namespace Grade_Uploading_and_Viewing_Criteria
             localhost.Service1 service = new localhost.Service1();
             bool isvalidSub;
             bool isvalidsubject;
-            service.isValidSubject(comboBox1.Text, out isvalidsubject, out isvalidSub );
+            service.isValidSubject(cmbsubject.Text, out isvalidsubject, out isvalidSub);
             BindingSource source = new BindingSource();
             if (isvalidsubject)
             {
-                service.ShowBySubject(comboBox1.Text);
-                source.DataSource = service.ShowBySubject(comboBox1.Text);
+                service.ShowBySubject(cmbsubject.Text);
+                source.DataSource = service.ShowBySubject(cmbsubject.Text);
                 dataGridView1.DataSource = source;
             }
             else
@@ -52,8 +52,24 @@ namespace Grade_Uploading_and_Viewing_Criteria
             v.Show();
         }
 
-                 
-        
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var item = dataGridView1.Rows[e.RowIndex].Cells[0].Value;
+            // MessageBox.Show(item.ToString());
+            TeacherUploadDMC form = new TeacherUploadDMC(cmbsubject.Text);
+            this.Hide();
+            form.Show();
+            
 
+        }
+
+        public void cmbsubject_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+
+
+
+
+        }
     }
 }
