@@ -98,9 +98,7 @@ namespace Grade_Uploading_and_Viewing_Criteria
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            StudentLoginViewForm frm = new StudentLoginViewForm();
-            this.Hide();
-            frm.Show();
+            
         }
 
         private void OfferedSubjectsform_Load(object sender, EventArgs e)
@@ -128,6 +126,13 @@ namespace Grade_Uploading_and_Viewing_Criteria
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            StudentLoginViewForm frm = new StudentLoginViewForm();
+            this.Hide();
+            frm.Show();
         }
     }
 }

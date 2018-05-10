@@ -34,5 +34,12 @@ namespace Grade_Uploading_and_Viewing_Criteria
                 MessageBox.Show("wrong code");
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TeacherLoginform form = new TeacherLoginform();
+            this.Hide();
+            form.Show();
+        }
     }
 }

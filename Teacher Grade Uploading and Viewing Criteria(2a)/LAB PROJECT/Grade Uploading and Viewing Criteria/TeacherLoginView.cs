@@ -67,5 +67,12 @@ namespace Grade_Uploading_and_Viewing_Criteria
             this.Hide();
             t.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TeacherViewSubjectInformation form = new TeacherViewSubjectInformation();
+            this.Hide();
+            form.Show();
+        }
     }
 }

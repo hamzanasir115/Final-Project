@@ -65,9 +65,8 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(95, 34);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
             // 
             // label4
             // 
@@ -132,9 +131,9 @@
             // 
             this.button3.Location = new System.Drawing.Point(74, 225);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(86, 23);
             this.button3.TabIndex = 11;
-            this.button3.Text = "Sow Report";
+            this.button3.Text = "Show Report";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 

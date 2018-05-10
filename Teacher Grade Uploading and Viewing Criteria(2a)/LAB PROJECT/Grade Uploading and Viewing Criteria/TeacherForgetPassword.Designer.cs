@@ -33,25 +33,26 @@
             this.bbsave = new System.Windows.Forms.Button();
             this.lblsecret = new System.Windows.Forms.Label();
             this.lblusername = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtsecret
             // 
-            this.txtsecret.Location = new System.Drawing.Point(125, 91);
+            this.txtsecret.Location = new System.Drawing.Point(124, 113);
             this.txtsecret.Name = "txtsecret";
             this.txtsecret.Size = new System.Drawing.Size(121, 20);
             this.txtsecret.TabIndex = 9;
             // 
             // txtusername
             // 
-            this.txtusername.Location = new System.Drawing.Point(125, 43);
+            this.txtusername.Location = new System.Drawing.Point(124, 65);
             this.txtusername.Name = "txtusername";
             this.txtusername.Size = new System.Drawing.Size(121, 20);
             this.txtusername.TabIndex = 8;
             // 
             // bbsave
             // 
-            this.bbsave.Location = new System.Drawing.Point(85, 141);
+            this.bbsave.Location = new System.Drawing.Point(84, 163);
             this.bbsave.Name = "bbsave";
             this.bbsave.Size = new System.Drawing.Size(104, 23);
             this.bbsave.TabIndex = 7;
@@ -62,7 +63,7 @@
             // lblsecret
             // 
             this.lblsecret.AutoSize = true;
-            this.lblsecret.Location = new System.Drawing.Point(36, 98);
+            this.lblsecret.Location = new System.Drawing.Point(35, 120);
             this.lblsecret.Name = "lblsecret";
             this.lblsecret.Size = new System.Drawing.Size(66, 13);
             this.lblsecret.TabIndex = 6;
@@ -71,17 +72,28 @@
             // lblusername
             // 
             this.lblusername.AutoSize = true;
-            this.lblusername.Location = new System.Drawing.Point(36, 50);
+            this.lblusername.Location = new System.Drawing.Point(35, 72);
             this.lblusername.Name = "lblusername";
             this.lblusername.Size = new System.Drawing.Size(57, 13);
             this.lblusername.TabIndex = 5;
             this.lblusername.Text = "UserName";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(25, 23);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(23, 27);
+            this.button1.TabIndex = 67;
+            this.button1.Text = "←";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // TeacherForgetPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtsecret);
             this.Controls.Add(this.txtusername);
             this.Controls.Add(this.bbsave);
@@ -101,5 +113,6 @@
         private System.Windows.Forms.Button bbsave;
         private System.Windows.Forms.Label lblsecret;
         private System.Windows.Forms.Label lblusername;
+        private System.Windows.Forms.Button button1;
     }
 }

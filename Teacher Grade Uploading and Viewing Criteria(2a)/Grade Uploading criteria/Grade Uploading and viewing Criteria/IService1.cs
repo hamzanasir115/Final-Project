@@ -105,6 +105,9 @@ namespace Grade_Uploading_and_viewing_Criteria
         List<Report> TeacherViewReport(string subject);
         [OperationContract]
         List<DMC> StudentViewDMC(string username);
+
+        [OperationContract] 
+        List<Report> StudentViewReport(string username);
     }
 
 

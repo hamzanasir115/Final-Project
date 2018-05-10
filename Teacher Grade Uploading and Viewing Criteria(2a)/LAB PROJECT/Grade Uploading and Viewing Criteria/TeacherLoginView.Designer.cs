@@ -33,11 +33,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnUploadDMC = new System.Windows.Forms.Button();
             this.btnUploadReport = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnView
             // 
-            this.btnView.Location = new System.Drawing.Point(81, 47);
+            this.btnView.Location = new System.Drawing.Point(80, 26);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(142, 23);
             this.btnView.TabIndex = 2;
@@ -47,7 +48,7 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(81, 212);
+            this.btnLogout.Location = new System.Drawing.Point(80, 224);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(142, 25);
             this.btnLogout.TabIndex = 3;
@@ -57,7 +58,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(82, 166);
+            this.button1.Location = new System.Drawing.Point(81, 145);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(142, 23);
             this.button1.TabIndex = 4;
@@ -67,7 +68,7 @@
             // 
             // btnUploadDMC
             // 
-            this.btnUploadDMC.Location = new System.Drawing.Point(82, 88);
+            this.btnUploadDMC.Location = new System.Drawing.Point(81, 67);
             this.btnUploadDMC.Name = "btnUploadDMC";
             this.btnUploadDMC.Size = new System.Drawing.Size(141, 23);
             this.btnUploadDMC.TabIndex = 5;
@@ -77,7 +78,7 @@
             // 
             // btnUploadReport
             // 
-            this.btnUploadReport.Location = new System.Drawing.Point(82, 128);
+            this.btnUploadReport.Location = new System.Drawing.Point(81, 107);
             this.btnUploadReport.Name = "btnUploadReport";
             this.btnUploadReport.Size = new System.Drawing.Size(141, 23);
             this.btnUploadReport.TabIndex = 6;
@@ -85,11 +86,22 @@
             this.btnUploadReport.UseVisualStyleBackColor = true;
             this.btnUploadReport.Click += new System.EventHandler(this.btnUploadReport_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(81, 183);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(141, 23);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "View Subject Information";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // TeacherLoginView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnUploadReport);
             this.Controls.Add(this.btnUploadDMC);
             this.Controls.Add(this.button1);
@@ -108,5 +120,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnUploadDMC;
         private System.Windows.Forms.Button btnUploadReport;
+        private System.Windows.Forms.Button button2;
     }
 }

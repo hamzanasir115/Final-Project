@@ -205,6 +205,12 @@
   <wsdl:message name="IService1_StudentViewDMC_OutputMessage">
     <wsdl:part name="parameters" element="tns:StudentViewDMCResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_StudentViewReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:StudentViewReport" />
+  </wsdl:message>
+  <wsdl:message name="IService1_StudentViewReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StudentViewReportResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="IsAlreadyExist">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/IsAlreadyExist" message="tns:IService1_IsAlreadyExist_InputMessage" />
@@ -337,6 +343,10 @@
     <wsdl:operation name="StudentViewDMC">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/StudentViewDMC" message="tns:IService1_StudentViewDMC_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/StudentViewDMCResponse" message="tns:IService1_StudentViewDMC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StudentViewReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/StudentViewReport" message="tns:IService1_StudentViewReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/StudentViewReportResponse" message="tns:IService1_StudentViewReport_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -631,6 +641,15 @@
     </wsdl:operation>
     <wsdl:operation name="StudentViewDMC">
       <soap:operation soapAction="http://tempuri.org/IService1/StudentViewDMC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StudentViewReport">
+      <soap:operation soapAction="http://tempuri.org/IService1/StudentViewReport" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

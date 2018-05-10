@@ -57,5 +57,19 @@ namespace Grade_Uploading_and_Viewing_Criteria
             form.Show();
             this.Hide();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            StudentAttendanceReport form = new StudentAttendanceReport();
+            this.Hide();
+            form.Show();
+        }
+
+        private void btnsubject_Click(object sender, EventArgs e)
+        {
+            StudentViewSubjectInformation form = new StudentViewSubjectInformation();
+            this.Hide();
+            form.Show();
+        }
     }
 }

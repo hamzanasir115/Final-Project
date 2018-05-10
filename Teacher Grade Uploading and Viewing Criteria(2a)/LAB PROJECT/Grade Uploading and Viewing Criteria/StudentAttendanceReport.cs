@@ -10,44 +10,37 @@ using System.Windows.Forms;
 
 namespace Grade_Uploading_and_Viewing_Criteria
 {
-    public partial class StudentDMC : Form
+    public partial class StudentAttendanceReport : Form
     {
-        public StudentDMC()
+        public StudentAttendanceReport()
         {
             InitializeComponent();
         }
 
-        private void StudentDMC_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            
+            StudentLoginViewForm form = new StudentLoginViewForm();
+            this.Hide();
+            form.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnShowReport_Click(object sender, EventArgs e)
         {
             localhost.Service1 ser = new localhost.Service1();
             bool Validstu;
             bool ValidStudent;
-            ser.isValidStudent(txtusername.Text,out Validstu,out ValidStudent);
+            ser.isValidStudent(txtusername.Text, out Validstu, out ValidStudent);
             BindingSource source = new BindingSource();
-            //source.DataSource = ser.StudentViewDMC(txtusername.T);
-            //dataGridView1.DataSource = source;
             if (Validstu)
             {
-                source.DataSource = ser.StudentViewDMC(txtusername.Text);
-                ser.StudentViewDMC(txtusername.Text);
+                source.DataSource = ser.StudentViewReport(txtusername.Text);
+                ser.StudentViewReport(txtusername.Text);
                 dataGridView1.DataSource = source;
             }
             else
             {
                 MessageBox.Show("Invalid Student");
             }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            StudentLoginViewForm form = new StudentLoginViewForm();
-            this.Hide();
-            form.Show();
         }
     }
 }

@@ -78,6 +78,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentAttendanceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentAttendanceReport.Designer.cs">
+      <DependentUpon>StudentAttendanceReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentDMC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,11 +192,23 @@
     <Compile Include="TeacherViewStudent.Designer.cs">
       <DependentUpon>TeacherViewStudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="TeacherViewSubjectInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherViewSubjectInformation.Designer.cs">
+      <DependentUpon>TeacherViewSubjectInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="TeacherViewSubjects.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TeacherViewSubjects.Designer.cs">
       <DependentUpon>TeacherViewSubjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentViewSubjectInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentViewSubjectInformation.Designer.cs">
+      <DependentUpon>StudentViewSubjectInformation.cs</DependentUpon>
     </Compile>
     <Compile Include="Web References\localhost\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -220,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Startup.resx">
       <DependentUpon>Startup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentAttendanceReport.resx">
+      <DependentUpon>StudentAttendanceReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentDMC.resx">
       <DependentUpon>StudentDMC.cs</DependentUpon>
@@ -275,8 +296,14 @@
     <EmbeddedResource Include="TeacherViewStudent.resx">
       <DependentUpon>TeacherViewStudent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TeacherViewSubjectInformation.resx">
+      <DependentUpon>TeacherViewSubjectInformation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TeacherViewSubjects.resx">
       <DependentUpon>TeacherViewSubjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentViewSubjectInformation.resx">
+      <DependentUpon>StudentViewSubjectInformation.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

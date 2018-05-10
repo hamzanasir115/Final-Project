@@ -28,16 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.sub1 = new System.Windows.Forms.Label();
             this.code1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.sub2 = new System.Windows.Forms.Label();
             this.code2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.sub3 = new System.Windows.Forms.Label();
             this.code3 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -45,34 +41,28 @@
             this.cmbSubject = new System.Windows.Forms.ComboBox();
             this.cmbCode = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.sub4 = new System.Windows.Forms.Label();
             this.code4 = new System.Windows.Forms.Label();
-            this.sub5 = new System.Windows.Forms.Label();
             this.code5 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.lblUserName = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtCreditHour = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.sub5 = new System.Windows.Forms.Label();
+            this.sub4 = new System.Windows.Forms.Label();
+            this.sub3 = new System.Windows.Forms.Label();
+            this.sub2 = new System.Windows.Forms.Label();
+            this.sub1 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "SUBJECT NAME";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(236, 13);
+            this.label2.Location = new System.Drawing.Point(352, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 13);
             this.label2.TabIndex = 1;
@@ -87,19 +77,10 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "CREDIT HOURS";
             // 
-            // sub1
-            // 
-            this.sub1.AutoSize = true;
-            this.sub1.Location = new System.Drawing.Point(41, 45);
-            this.sub1.Name = "sub1";
-            this.sub1.Size = new System.Drawing.Size(145, 13);
-            this.sub1.TabIndex = 3;
-            this.sub1.Text = "Object Oriented Programming";
-            // 
             // code1
             // 
             this.code1.AutoSize = true;
-            this.code1.Location = new System.Drawing.Point(242, 45);
+            this.code1.Location = new System.Drawing.Point(358, 45);
             this.code1.Name = "code1";
             this.code1.Size = new System.Drawing.Size(39, 13);
             this.code1.TabIndex = 4;
@@ -114,19 +95,10 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "3";
             // 
-            // sub2
-            // 
-            this.sub2.AutoSize = true;
-            this.sub2.Location = new System.Drawing.Point(41, 78);
-            this.sub2.Name = "sub2";
-            this.sub2.Size = new System.Drawing.Size(137, 13);
-            this.sub2.TabIndex = 6;
-            this.sub2.Text = "Programming Fundamentals";
-            // 
             // code2
             // 
             this.code2.AutoSize = true;
-            this.code2.Location = new System.Drawing.Point(242, 78);
+            this.code2.Location = new System.Drawing.Point(358, 78);
             this.code2.Name = "code2";
             this.code2.Size = new System.Drawing.Size(39, 13);
             this.code2.TabIndex = 7;
@@ -141,19 +113,10 @@
             this.label9.TabIndex = 8;
             this.label9.Text = "3";
             // 
-            // sub3
-            // 
-            this.sub3.AutoSize = true;
-            this.sub3.Location = new System.Drawing.Point(41, 113);
-            this.sub3.Name = "sub3";
-            this.sub3.Size = new System.Drawing.Size(128, 13);
-            this.sub3.TabIndex = 9;
-            this.sub3.Text = "Introduction to Computing";
-            // 
             // code3
             // 
             this.code3.AutoSize = true;
-            this.code3.Location = new System.Drawing.Point(242, 113);
+            this.code3.Location = new System.Drawing.Point(358, 113);
             this.code3.Name = "code3";
             this.code3.Size = new System.Drawing.Size(39, 13);
             this.code3.TabIndex = 10;
@@ -171,7 +134,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(41, 275);
+            this.label13.Location = new System.Drawing.Point(43, 124);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(99, 13);
             this.label13.TabIndex = 12;
@@ -180,7 +143,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(41, 307);
+            this.label14.Location = new System.Drawing.Point(43, 156);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(88, 13);
             this.label14.TabIndex = 13;
@@ -195,7 +158,7 @@
             "Introduction to Computing",
             "Discrete Mathematical Structure",
             "Digital and Logic Design"});
-            this.cmbSubject.Location = new System.Drawing.Point(199, 272);
+            this.cmbSubject.Location = new System.Drawing.Point(177, 121);
             this.cmbSubject.Name = "cmbSubject";
             this.cmbSubject.Size = new System.Drawing.Size(174, 21);
             this.cmbSubject.TabIndex = 15;
@@ -209,14 +172,14 @@
             "CS141",
             "CS211",
             "CSE211"});
-            this.cmbCode.Location = new System.Drawing.Point(199, 304);
+            this.cmbCode.Location = new System.Drawing.Point(177, 153);
             this.cmbCode.Name = "cmbCode";
             this.cmbCode.Size = new System.Drawing.Size(174, 21);
             this.cmbCode.TabIndex = 16;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(275, 346);
+            this.button1.Location = new System.Drawing.Point(253, 195);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 27);
             this.button1.TabIndex = 17;
@@ -224,36 +187,19 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // sub4
-            // 
-            this.sub4.AutoSize = true;
-            this.sub4.Location = new System.Drawing.Point(59, 142);
-            this.sub4.Name = "sub4";
-            this.sub4.Size = new System.Drawing.Size(0, 13);
-            this.sub4.TabIndex = 18;
-            // 
             // code4
             // 
             this.code4.AutoSize = true;
-            this.code4.Location = new System.Drawing.Point(242, 142);
+            this.code4.Location = new System.Drawing.Point(358, 142);
             this.code4.Name = "code4";
             this.code4.Size = new System.Drawing.Size(39, 13);
             this.code4.TabIndex = 19;
             this.code4.Text = "CS211";
             // 
-            // sub5
-            // 
-            this.sub5.AutoSize = true;
-            this.sub5.Location = new System.Drawing.Point(41, 170);
-            this.sub5.Name = "sub5";
-            this.sub5.Size = new System.Drawing.Size(122, 13);
-            this.sub5.TabIndex = 20;
-            this.sub5.Text = "Digital and Logic Design";
-            // 
             // code5
             // 
             this.code5.AutoSize = true;
-            this.code5.Location = new System.Drawing.Point(242, 170);
+            this.code5.Location = new System.Drawing.Point(358, 170);
             this.code5.Name = "code5";
             this.code5.Size = new System.Drawing.Size(46, 13);
             this.code5.TabIndex = 21;
@@ -277,41 +223,10 @@
             this.label11.TabIndex = 23;
             this.label11.Text = "3";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(41, 141);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(158, 13);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "Discrete Mathematical Structure";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(41, 353);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(33, 13);
-            this.linkLabel1.TabIndex = 25;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Login";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(103, 353);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(60, 13);
-            this.linkLabel2.TabIndex = 26;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Main Menu";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
-            // 
             // lblUserName
             // 
             this.lblUserName.AutoSize = true;
-            this.lblUserName.Location = new System.Drawing.Point(39, 208);
+            this.lblUserName.Location = new System.Drawing.Point(41, 57);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(57, 13);
             this.lblUserName.TabIndex = 27;
@@ -319,7 +234,7 @@
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(199, 201);
+            this.txtUserName.Location = new System.Drawing.Point(177, 50);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(172, 20);
             this.txtUserName.TabIndex = 28;
@@ -327,7 +242,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(41, 244);
+            this.label5.Location = new System.Drawing.Point(43, 93);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 13);
             this.label5.TabIndex = 29;
@@ -335,30 +250,105 @@
             // 
             // txtCreditHour
             // 
-            this.txtCreditHour.Location = new System.Drawing.Point(199, 237);
+            this.txtCreditHour.Location = new System.Drawing.Point(177, 86);
             this.txtCreditHour.Name = "txtCreditHour";
             this.txtCreditHour.Size = new System.Drawing.Size(172, 20);
             this.txtCreditHour.TabIndex = 30;
             this.txtCreditHour.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(358, 141);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(158, 13);
+            this.label4.TabIndex = 37;
+            this.label4.Text = "Discrete Mathematical Structure";
+            // 
+            // sub5
+            // 
+            this.sub5.AutoSize = true;
+            this.sub5.Location = new System.Drawing.Point(358, 170);
+            this.sub5.Name = "sub5";
+            this.sub5.Size = new System.Drawing.Size(122, 13);
+            this.sub5.TabIndex = 36;
+            this.sub5.Text = "Digital and Logic Design";
+            // 
+            // sub4
+            // 
+            this.sub4.AutoSize = true;
+            this.sub4.Location = new System.Drawing.Point(376, 142);
+            this.sub4.Name = "sub4";
+            this.sub4.Size = new System.Drawing.Size(0, 13);
+            this.sub4.TabIndex = 35;
+            // 
+            // sub3
+            // 
+            this.sub3.AutoSize = true;
+            this.sub3.Location = new System.Drawing.Point(358, 113);
+            this.sub3.Name = "sub3";
+            this.sub3.Size = new System.Drawing.Size(128, 13);
+            this.sub3.TabIndex = 34;
+            this.sub3.Text = "Introduction to Computing";
+            // 
+            // sub2
+            // 
+            this.sub2.AutoSize = true;
+            this.sub2.Location = new System.Drawing.Point(358, 78);
+            this.sub2.Name = "sub2";
+            this.sub2.Size = new System.Drawing.Size(137, 13);
+            this.sub2.TabIndex = 33;
+            this.sub2.Text = "Programming Fundamentals";
+            // 
+            // sub1
+            // 
+            this.sub1.AutoSize = true;
+            this.sub1.Location = new System.Drawing.Point(358, 45);
+            this.sub1.Name = "sub1";
+            this.sub1.Size = new System.Drawing.Size(145, 13);
+            this.sub1.TabIndex = 32;
+            this.sub1.Text = "Object Oriented Programming";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(358, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 13);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "SUBJECT NAME";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(12, 13);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(41, 23);
+            this.button2.TabIndex = 38;
+            this.button2.Text = "←";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // OfferedSubjectsform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 408);
+            this.ClientSize = new System.Drawing.Size(384, 240);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.sub5);
+            this.Controls.Add(this.sub4);
+            this.Controls.Add(this.sub3);
+            this.Controls.Add(this.sub2);
+            this.Controls.Add(this.sub1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCreditHour);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.lblUserName);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.code5);
-            this.Controls.Add(this.sub5);
             this.Controls.Add(this.code4);
-            this.Controls.Add(this.sub4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cmbCode);
             this.Controls.Add(this.cmbSubject);
@@ -366,16 +356,12 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.code3);
-            this.Controls.Add(this.sub3);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.code2);
-            this.Controls.Add(this.sub2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.code1);
-            this.Controls.Add(this.sub1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "OfferedSubjectsform";
             this.Text = "OfferedSubjectsform";
             this.Load += new System.EventHandler(this.OfferedSubjectsform_Load);
@@ -386,16 +372,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label sub1;
         private System.Windows.Forms.Label code1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label sub2;
         private System.Windows.Forms.Label code2;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label sub3;
         private System.Windows.Forms.Label code3;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
@@ -403,18 +385,21 @@
         private System.Windows.Forms.ComboBox cmbSubject;
         private System.Windows.Forms.ComboBox cmbCode;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label sub4;
         private System.Windows.Forms.Label code4;
-        private System.Windows.Forms.Label sub5;
         private System.Windows.Forms.Label code5;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtCreditHour;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label sub5;
+        private System.Windows.Forms.Label sub4;
+        private System.Windows.Forms.Label sub3;
+        private System.Windows.Forms.Label sub2;
+        private System.Windows.Forms.Label sub1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
     }
 }

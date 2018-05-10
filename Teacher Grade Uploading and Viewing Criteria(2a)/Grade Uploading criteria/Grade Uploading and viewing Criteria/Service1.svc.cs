@@ -434,5 +434,18 @@ namespace Grade_Uploading_and_viewing_Criteria
             }
             return List;
         }
+
+        public List<Report> StudentViewReport(string username)
+        {
+            List<Report> list = new List<Report>();
+            foreach(Report r in ReportDL.report )
+            {
+                if (r.StudentName == username)
+                {
+                    list.Add(r);
+                }
+            }
+            return list;
+        }
     }
 }

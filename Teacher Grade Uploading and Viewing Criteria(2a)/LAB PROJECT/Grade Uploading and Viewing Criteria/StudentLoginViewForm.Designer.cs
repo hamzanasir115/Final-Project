@@ -33,6 +33,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.btnsubject = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -47,7 +48,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(75, 77);
+            this.button2.Location = new System.Drawing.Point(75, 58);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(136, 30);
             this.button2.TabIndex = 1;
@@ -57,7 +58,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(75, 142);
+            this.button3.Location = new System.Drawing.Point(75, 108);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(136, 27);
             this.button3.TabIndex = 2;
@@ -67,16 +68,17 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(75, 214);
+            this.button5.Location = new System.Drawing.Point(75, 156);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(136, 28);
             this.button5.TabIndex = 4;
             this.button5.Text = "View Attendance Report";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(75, 284);
+            this.button6.Location = new System.Drawing.Point(75, 250);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(136, 28);
             this.button6.TabIndex = 5;
@@ -84,18 +86,29 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // btnsubject
+            // 
+            this.btnsubject.Location = new System.Drawing.Point(75, 207);
+            this.btnsubject.Name = "btnsubject";
+            this.btnsubject.Size = new System.Drawing.Size(136, 23);
+            this.btnsubject.TabIndex = 6;
+            this.btnsubject.Text = "View Subject Information";
+            this.btnsubject.UseVisualStyleBackColor = true;
+            this.btnsubject.Click += new System.EventHandler(this.btnsubject_Click);
+            // 
             // StudentLoginViewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 333);
+            this.ClientSize = new System.Drawing.Size(284, 298);
+            this.Controls.Add(this.btnsubject);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "StudentLoginViewForm";
-            this.Text = "StudentLoginViewForm";
+            this.Text = " ";
             this.ResumeLayout(false);
 
         }
@@ -107,5 +120,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnsubject;
     }
 }

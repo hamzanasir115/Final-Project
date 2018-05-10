@@ -483,4 +483,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="StudentViewReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StudentViewReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Grade_Uploading_and_viewing_Criteria" minOccurs="0" name="StudentViewReportResult" nillable="true" type="q9:ArrayOfReport" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

@@ -35,28 +35,28 @@
             this.lblcredithour = new System.Windows.Forms.Label();
             this.txtcredithours = new System.Windows.Forms.TextBox();
             this.btnregister = new System.Windows.Forms.Button();
-            this.lblDiscreteMathematics = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.code5 = new System.Windows.Forms.Label();
-            this.sub5 = new System.Windows.Forms.Label();
             this.code4 = new System.Windows.Forms.Label();
-            this.sub4 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.code3 = new System.Windows.Forms.Label();
-            this.sub3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.code2 = new System.Windows.Forms.Label();
-            this.sub2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.code1 = new System.Windows.Forms.Label();
-            this.sub1 = new System.Windows.Forms.Label();
             this.lblcredithors = new System.Windows.Forms.Label();
             this.lblsubjectcode = new System.Windows.Forms.Label();
-            this.lblsubjectname = new System.Windows.Forms.Label();
             this.lblTextSubjectCode = new System.Windows.Forms.Label();
             this.cmbsubjectcode = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.lblDiscreteMathematics = new System.Windows.Forms.Label();
+            this.sub5 = new System.Windows.Forms.Label();
+            this.sub4 = new System.Windows.Forms.Label();
+            this.sub3 = new System.Windows.Forms.Label();
+            this.sub2 = new System.Windows.Forms.Label();
+            this.sub1 = new System.Windows.Forms.Label();
+            this.lblsubjectname = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cmbofferedsubjects
@@ -125,19 +125,10 @@
             this.btnregister.UseVisualStyleBackColor = true;
             this.btnregister.Click += new System.EventHandler(this.btnregister_Click);
             // 
-            // lblDiscreteMathematics
-            // 
-            this.lblDiscreteMathematics.AutoSize = true;
-            this.lblDiscreteMathematics.Location = new System.Drawing.Point(42, 361);
-            this.lblDiscreteMathematics.Name = "lblDiscreteMathematics";
-            this.lblDiscreteMathematics.Size = new System.Drawing.Size(158, 13);
-            this.lblDiscreteMathematics.TabIndex = 62;
-            this.lblDiscreteMathematics.Text = "Discrete Mathematical Structure";
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(359, 390);
+            this.label11.Location = new System.Drawing.Point(288, 192);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(13, 13);
             this.label11.TabIndex = 61;
@@ -146,7 +137,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(359, 361);
+            this.label10.Location = new System.Drawing.Point(288, 163);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(13, 13);
             this.label10.TabIndex = 60;
@@ -155,42 +146,25 @@
             // code5
             // 
             this.code5.AutoSize = true;
-            this.code5.Location = new System.Drawing.Point(243, 390);
+            this.code5.Location = new System.Drawing.Point(301, 179);
             this.code5.Name = "code5";
             this.code5.Size = new System.Drawing.Size(46, 13);
             this.code5.TabIndex = 59;
             this.code5.Text = "CSE211";
             // 
-            // sub5
-            // 
-            this.sub5.AutoSize = true;
-            this.sub5.Location = new System.Drawing.Point(42, 390);
-            this.sub5.Name = "sub5";
-            this.sub5.Size = new System.Drawing.Size(122, 13);
-            this.sub5.TabIndex = 58;
-            this.sub5.Text = "Digital and Logic Design";
-            // 
             // code4
             // 
             this.code4.AutoSize = true;
-            this.code4.Location = new System.Drawing.Point(243, 362);
+            this.code4.Location = new System.Drawing.Point(301, 151);
             this.code4.Name = "code4";
             this.code4.Size = new System.Drawing.Size(39, 13);
             this.code4.TabIndex = 57;
             this.code4.Text = "CS211";
             // 
-            // sub4
-            // 
-            this.sub4.AutoSize = true;
-            this.sub4.Location = new System.Drawing.Point(60, 362);
-            this.sub4.Name = "sub4";
-            this.sub4.Size = new System.Drawing.Size(0, 13);
-            this.sub4.TabIndex = 56;
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(359, 333);
+            this.label12.Location = new System.Drawing.Point(288, 135);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(13, 13);
             this.label12.TabIndex = 55;
@@ -199,25 +173,16 @@
             // code3
             // 
             this.code3.AutoSize = true;
-            this.code3.Location = new System.Drawing.Point(243, 333);
+            this.code3.Location = new System.Drawing.Point(301, 122);
             this.code3.Name = "code3";
             this.code3.Size = new System.Drawing.Size(39, 13);
             this.code3.TabIndex = 54;
             this.code3.Text = "CS141";
             // 
-            // sub3
-            // 
-            this.sub3.AutoSize = true;
-            this.sub3.Location = new System.Drawing.Point(42, 333);
-            this.sub3.Name = "sub3";
-            this.sub3.Size = new System.Drawing.Size(128, 13);
-            this.sub3.TabIndex = 53;
-            this.sub3.Text = "Introduction to Computing";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(359, 298);
+            this.label9.Location = new System.Drawing.Point(288, 100);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(13, 13);
             this.label9.TabIndex = 52;
@@ -226,25 +191,16 @@
             // code2
             // 
             this.code2.AutoSize = true;
-            this.code2.Location = new System.Drawing.Point(243, 298);
+            this.code2.Location = new System.Drawing.Point(301, 87);
             this.code2.Name = "code2";
             this.code2.Size = new System.Drawing.Size(39, 13);
             this.code2.TabIndex = 51;
             this.code2.Text = "CS142";
             // 
-            // sub2
-            // 
-            this.sub2.AutoSize = true;
-            this.sub2.Location = new System.Drawing.Point(42, 298);
-            this.sub2.Name = "sub2";
-            this.sub2.Size = new System.Drawing.Size(137, 13);
-            this.sub2.TabIndex = 50;
-            this.sub2.Text = "Programming Fundamentals";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(359, 265);
+            this.label6.Location = new System.Drawing.Point(288, 67);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(13, 13);
             this.label6.TabIndex = 49;
@@ -253,26 +209,16 @@
             // code1
             // 
             this.code1.AutoSize = true;
-            this.code1.Location = new System.Drawing.Point(243, 265);
+            this.code1.Location = new System.Drawing.Point(301, 54);
             this.code1.Name = "code1";
             this.code1.Size = new System.Drawing.Size(39, 13);
             this.code1.TabIndex = 48;
             this.code1.Text = "CS241";
             // 
-            // sub1
-            // 
-            this.sub1.AutoSize = true;
-            this.sub1.Location = new System.Drawing.Point(42, 265);
-            this.sub1.Name = "sub1";
-            this.sub1.Size = new System.Drawing.Size(145, 13);
-            this.sub1.TabIndex = 47;
-            this.sub1.Text = "Object Oriented Programming";
-            this.sub1.Click += new System.EventHandler(this.sub1_Click);
-            // 
             // lblcredithors
             // 
             this.lblcredithors.AutoSize = true;
-            this.lblcredithors.Location = new System.Drawing.Point(359, 233);
+            this.lblcredithors.Location = new System.Drawing.Point(288, 35);
             this.lblcredithors.Name = "lblcredithors";
             this.lblcredithors.Size = new System.Drawing.Size(89, 13);
             this.lblcredithors.TabIndex = 46;
@@ -281,20 +227,11 @@
             // lblsubjectcode
             // 
             this.lblsubjectcode.AutoSize = true;
-            this.lblsubjectcode.Location = new System.Drawing.Point(237, 233);
+            this.lblsubjectcode.Location = new System.Drawing.Point(295, 22);
             this.lblsubjectcode.Name = "lblsubjectcode";
             this.lblsubjectcode.Size = new System.Drawing.Size(88, 13);
             this.lblsubjectcode.TabIndex = 45;
             this.lblsubjectcode.Text = "SUBJECT CODE";
-            // 
-            // lblsubjectname
-            // 
-            this.lblsubjectname.AutoSize = true;
-            this.lblsubjectname.Location = new System.Drawing.Point(42, 233);
-            this.lblsubjectname.Name = "lblsubjectname";
-            this.lblsubjectname.Size = new System.Drawing.Size(89, 13);
-            this.lblsubjectname.TabIndex = 44;
-            this.lblsubjectname.Text = "SUBJECT NAME";
             // 
             // lblTextSubjectCode
             // 
@@ -329,33 +266,95 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // lblDiscreteMathematics
+            // 
+            this.lblDiscreteMathematics.AutoSize = true;
+            this.lblDiscreteMathematics.Location = new System.Drawing.Point(283, 150);
+            this.lblDiscreteMathematics.Name = "lblDiscreteMathematics";
+            this.lblDiscreteMathematics.Size = new System.Drawing.Size(158, 13);
+            this.lblDiscreteMathematics.TabIndex = 72;
+            this.lblDiscreteMathematics.Text = "Discrete Mathematical Structure";
+            // 
+            // sub5
+            // 
+            this.sub5.AutoSize = true;
+            this.sub5.Location = new System.Drawing.Point(283, 179);
+            this.sub5.Name = "sub5";
+            this.sub5.Size = new System.Drawing.Size(122, 13);
+            this.sub5.TabIndex = 71;
+            this.sub5.Text = "Digital and Logic Design";
+            // 
+            // sub4
+            // 
+            this.sub4.AutoSize = true;
+            this.sub4.Location = new System.Drawing.Point(301, 151);
+            this.sub4.Name = "sub4";
+            this.sub4.Size = new System.Drawing.Size(0, 13);
+            this.sub4.TabIndex = 70;
+            // 
+            // sub3
+            // 
+            this.sub3.AutoSize = true;
+            this.sub3.Location = new System.Drawing.Point(283, 122);
+            this.sub3.Name = "sub3";
+            this.sub3.Size = new System.Drawing.Size(128, 13);
+            this.sub3.TabIndex = 69;
+            this.sub3.Text = "Introduction to Computing";
+            // 
+            // sub2
+            // 
+            this.sub2.AutoSize = true;
+            this.sub2.Location = new System.Drawing.Point(283, 87);
+            this.sub2.Name = "sub2";
+            this.sub2.Size = new System.Drawing.Size(137, 13);
+            this.sub2.TabIndex = 68;
+            this.sub2.Text = "Programming Fundamentals";
+            // 
+            // sub1
+            // 
+            this.sub1.AutoSize = true;
+            this.sub1.Location = new System.Drawing.Point(283, 54);
+            this.sub1.Name = "sub1";
+            this.sub1.Size = new System.Drawing.Size(145, 13);
+            this.sub1.TabIndex = 67;
+            this.sub1.Text = "Object Oriented Programming";
+            // 
+            // lblsubjectname
+            // 
+            this.lblsubjectname.AutoSize = true;
+            this.lblsubjectname.Location = new System.Drawing.Point(283, 22);
+            this.lblsubjectname.Name = "lblsubjectname";
+            this.lblsubjectname.Size = new System.Drawing.Size(89, 13);
+            this.lblsubjectname.TabIndex = 66;
+            this.lblsubjectname.Text = "SUBJECT NAME";
+            // 
             // TeacherOfferedSubjectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(553, 435);
+            this.ClientSize = new System.Drawing.Size(283, 232);
+            this.Controls.Add(this.lblDiscreteMathematics);
+            this.Controls.Add(this.sub5);
+            this.Controls.Add(this.sub4);
+            this.Controls.Add(this.sub3);
+            this.Controls.Add(this.sub2);
+            this.Controls.Add(this.sub1);
+            this.Controls.Add(this.lblsubjectname);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cmbsubjectcode);
             this.Controls.Add(this.lblTextSubjectCode);
-            this.Controls.Add(this.lblDiscreteMathematics);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.code5);
-            this.Controls.Add(this.sub5);
             this.Controls.Add(this.code4);
-            this.Controls.Add(this.sub4);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.code3);
-            this.Controls.Add(this.sub3);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.code2);
-            this.Controls.Add(this.sub2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.code1);
-            this.Controls.Add(this.sub1);
             this.Controls.Add(this.lblcredithors);
             this.Controls.Add(this.lblsubjectcode);
-            this.Controls.Add(this.lblsubjectname);
             this.Controls.Add(this.btnregister);
             this.Controls.Add(this.txtcredithours);
             this.Controls.Add(this.lblcredithour);
@@ -380,27 +379,27 @@
         private System.Windows.Forms.Label lblcredithour;
         private System.Windows.Forms.TextBox txtcredithours;
         private System.Windows.Forms.Button btnregister;
-        private System.Windows.Forms.Label lblDiscreteMathematics;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label code5;
-        private System.Windows.Forms.Label sub5;
         private System.Windows.Forms.Label code4;
-        private System.Windows.Forms.Label sub4;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label code3;
-        private System.Windows.Forms.Label sub3;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label code2;
-        private System.Windows.Forms.Label sub2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label code1;
-        private System.Windows.Forms.Label sub1;
         private System.Windows.Forms.Label lblcredithors;
         private System.Windows.Forms.Label lblsubjectcode;
-        private System.Windows.Forms.Label lblsubjectname;
         private System.Windows.Forms.Label lblTextSubjectCode;
         private System.Windows.Forms.ComboBox cmbsubjectcode;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblDiscreteMathematics;
+        private System.Windows.Forms.Label sub5;
+        private System.Windows.Forms.Label sub4;
+        private System.Windows.Forms.Label sub3;
+        private System.Windows.Forms.Label sub2;
+        private System.Windows.Forms.Label sub1;
+        private System.Windows.Forms.Label lblsubjectname;
     }
 }

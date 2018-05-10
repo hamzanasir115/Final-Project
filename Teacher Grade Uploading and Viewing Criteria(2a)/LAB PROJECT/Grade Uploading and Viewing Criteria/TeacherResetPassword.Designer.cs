@@ -41,7 +41,7 @@
             // 
             // bbreset
             // 
-            this.bbreset.Location = new System.Drawing.Point(148, 130);
+            this.bbreset.Location = new System.Drawing.Point(146, 119);
             this.bbreset.Name = "bbreset";
             this.bbreset.Size = new System.Drawing.Size(75, 23);
             this.bbreset.TabIndex = 11;
@@ -52,7 +52,7 @@
             // lnklogin
             // 
             this.lnklogin.AutoSize = true;
-            this.lnklogin.Location = new System.Drawing.Point(46, 140);
+            this.lnklogin.Location = new System.Drawing.Point(44, 129);
             this.lnklogin.Name = "lnklogin";
             this.lnklogin.Size = new System.Drawing.Size(43, 13);
             this.lnklogin.TabIndex = 10;
@@ -63,7 +63,7 @@
             // lblpassword
             // 
             this.lblpassword.AutoSize = true;
-            this.lblpassword.Location = new System.Drawing.Point(36, 88);
+            this.lblpassword.Location = new System.Drawing.Point(34, 77);
             this.lblpassword.Name = "lblpassword";
             this.lblpassword.Size = new System.Drawing.Size(53, 13);
             this.lblpassword.TabIndex = 9;
@@ -72,7 +72,7 @@
             // lblusername
             // 
             this.lblusername.AutoSize = true;
-            this.lblusername.Location = new System.Drawing.Point(36, 42);
+            this.lblusername.Location = new System.Drawing.Point(34, 31);
             this.lblusername.Name = "lblusername";
             this.lblusername.Size = new System.Drawing.Size(57, 13);
             this.lblusername.TabIndex = 8;
@@ -80,7 +80,7 @@
             // 
             // txtpassword
             // 
-            this.txtpassword.Location = new System.Drawing.Point(137, 81);
+            this.txtpassword.Location = new System.Drawing.Point(135, 70);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.Size = new System.Drawing.Size(112, 20);
             this.txtpassword.TabIndex = 7;
@@ -88,7 +88,7 @@
             // 
             // txtusername
             // 
-            this.txtusername.Location = new System.Drawing.Point(137, 35);
+            this.txtusername.Location = new System.Drawing.Point(135, 24);
             this.txtusername.Name = "txtusername";
             this.txtusername.Size = new System.Drawing.Size(112, 20);
             this.txtusername.TabIndex = 6;
@@ -101,7 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(284, 172);
             this.Controls.Add(this.bbreset);
             this.Controls.Add(this.lnklogin);
             this.Controls.Add(this.lblpassword);
