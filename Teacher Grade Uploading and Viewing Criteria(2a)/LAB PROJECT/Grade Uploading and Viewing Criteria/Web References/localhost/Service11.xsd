@@ -469,4 +469,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="StudentViewDMC">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StudentViewDMCResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Grade_Uploading_and_viewing_Criteria" minOccurs="0" name="StudentViewDMCResult" nillable="true" type="q8:ArrayOfDMC" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

@@ -19,7 +19,9 @@ namespace Grade_Uploading_and_Viewing_Criteria
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            StudentDMC dmc = new StudentDMC();
+            this.Hide();
+            dmc.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)

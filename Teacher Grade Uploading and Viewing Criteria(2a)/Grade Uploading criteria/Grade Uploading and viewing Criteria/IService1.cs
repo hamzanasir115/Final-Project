@@ -103,7 +103,8 @@ namespace Grade_Uploading_and_viewing_Criteria
         bool UploadReport(string studentname, string teachername, string subject, string rep, string percentage);
         [OperationContract]
         List<Report> TeacherViewReport(string subject);
-
+        [OperationContract]
+        List<DMC> StudentViewDMC(string username);
     }
 
 

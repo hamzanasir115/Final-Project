@@ -420,6 +420,19 @@ namespace Grade_Uploading_and_viewing_Criteria
             return view;
         }
 
-
+        public List<DMC> StudentViewDMC(string username)
+        {
+            List<DMC> List = new List<DMC>();
+            DMC result = new DMC();
+            result.StudentName1 = username;
+            foreach (DMC d in DMCDL.dmc)
+            {
+                if (result.StudentName1 == d.StudentName1)
+                {
+                    List.Add(d);
+                }
+            }
+            return List;
+        }
     }
 }
