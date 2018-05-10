@@ -23,7 +23,7 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Web.Services.WebServiceBindingAttribute(Name="BasicHttpBinding_IService1", Namespace="http://tempuri.org/")]
@@ -65,6 +65,8 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
         
         private System.Threading.SendOrPostCallback isValidSubjectOperationCompleted;
         
+        private System.Threading.SendOrPostCallback isTeacherValidSubjectOperationCompleted;
+        
         private System.Threading.SendOrPostCallback AddSubjectOperationCompleted;
         
         private System.Threading.SendOrPostCallback IsSubjectAlreadyExistOperationCompleted;
@@ -86,6 +88,10 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
         private System.Threading.SendOrPostCallback UploadDMCOperationCompleted;
         
         private System.Threading.SendOrPostCallback TeacherViewDMCOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback UploadReportOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback TeacherViewReportOperationCompleted;
         
         private bool useDefaultCredentialsSetExplicitly;
         
@@ -180,6 +186,9 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
         public event isValidSubjectCompletedEventHandler isValidSubjectCompleted;
         
         /// <remarks/>
+        public event isTeacherValidSubjectCompletedEventHandler isTeacherValidSubjectCompleted;
+        
+        /// <remarks/>
         public event AddSubjectCompletedEventHandler AddSubjectCompleted;
         
         /// <remarks/>
@@ -211,6 +220,12 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
         
         /// <remarks/>
         public event TeacherViewDMCCompletedEventHandler TeacherViewDMCCompleted;
+        
+        /// <remarks/>
+        public event UploadReportCompletedEventHandler UploadReportCompleted;
+        
+        /// <remarks/>
+        public event TeacherViewReportCompletedEventHandler TeacherViewReportCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/IsAlreadyExist", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -783,6 +798,36 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/isTeacherValidSubject", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void isTeacherValidSubject([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string subjectname, out bool isTeacherValidSubjectResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool isTeacherValidSubjectResultSpecified) {
+            object[] results = this.Invoke("isTeacherValidSubject", new object[] {
+                        subjectname});
+            isTeacherValidSubjectResult = ((bool)(results[0]));
+            isTeacherValidSubjectResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void isTeacherValidSubjectAsync(string subjectname) {
+            this.isTeacherValidSubjectAsync(subjectname, null);
+        }
+        
+        /// <remarks/>
+        public void isTeacherValidSubjectAsync(string subjectname, object userState) {
+            if ((this.isTeacherValidSubjectOperationCompleted == null)) {
+                this.isTeacherValidSubjectOperationCompleted = new System.Threading.SendOrPostCallback(this.OnisTeacherValidSubjectOperationCompleted);
+            }
+            this.InvokeAsync("isTeacherValidSubject", new object[] {
+                        subjectname}, this.isTeacherValidSubjectOperationCompleted, userState);
+        }
+        
+        private void OnisTeacherValidSubjectOperationCompleted(object arg) {
+            if ((this.isTeacherValidSubjectCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.isTeacherValidSubjectCompleted(this, new isTeacherValidSubjectCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/AddSubject", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public void AddSubject([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string username, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string subjectname, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string subjectcode, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string creditHour) {
             this.Invoke("AddSubject", new object[] {
@@ -1139,6 +1184,75 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/UploadReport", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void UploadReport([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string studentname, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string teachername, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string subject, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string rep, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string percentage, out bool UploadReportResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool UploadReportResultSpecified) {
+            object[] results = this.Invoke("UploadReport", new object[] {
+                        studentname,
+                        teachername,
+                        subject,
+                        rep,
+                        percentage});
+            UploadReportResult = ((bool)(results[0]));
+            UploadReportResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void UploadReportAsync(string studentname, string teachername, string subject, string rep, string percentage) {
+            this.UploadReportAsync(studentname, teachername, subject, rep, percentage, null);
+        }
+        
+        /// <remarks/>
+        public void UploadReportAsync(string studentname, string teachername, string subject, string rep, string percentage, object userState) {
+            if ((this.UploadReportOperationCompleted == null)) {
+                this.UploadReportOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUploadReportOperationCompleted);
+            }
+            this.InvokeAsync("UploadReport", new object[] {
+                        studentname,
+                        teachername,
+                        subject,
+                        rep,
+                        percentage}, this.UploadReportOperationCompleted, userState);
+        }
+        
+        private void OnUploadReportOperationCompleted(object arg) {
+            if ((this.UploadReportCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.UploadReportCompleted(this, new UploadReportCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/TeacherViewReport", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/Grade_Uploading_and_viewing_Criteria")]
+        public Report[] TeacherViewReport([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string subject) {
+            object[] results = this.Invoke("TeacherViewReport", new object[] {
+                        subject});
+            return ((Report[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void TeacherViewReportAsync(string subject) {
+            this.TeacherViewReportAsync(subject, null);
+        }
+        
+        /// <remarks/>
+        public void TeacherViewReportAsync(string subject, object userState) {
+            if ((this.TeacherViewReportOperationCompleted == null)) {
+                this.TeacherViewReportOperationCompleted = new System.Threading.SendOrPostCallback(this.OnTeacherViewReportOperationCompleted);
+            }
+            this.InvokeAsync("TeacherViewReport", new object[] {
+                        subject}, this.TeacherViewReportOperationCompleted, userState);
+        }
+        
+        private void OnTeacherViewReportOperationCompleted(object arg) {
+            if ((this.TeacherViewReportCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.TeacherViewReportCompleted(this, new TeacherViewReportCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -1200,6 +1314,80 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
             }
             set {
                 this.stringValueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2612.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/Grade_Uploading_and_viewing_Criteria")]
+    public partial class Report {
+        
+        private string attendencePercentageField;
+        
+        private string behavioreReportField;
+        
+        private string studentNameField;
+        
+        private string subjectField;
+        
+        private string teacherNameField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string AttendencePercentage {
+            get {
+                return this.attendencePercentageField;
+            }
+            set {
+                this.attendencePercentageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string BehavioreReport {
+            get {
+                return this.behavioreReportField;
+            }
+            set {
+                this.behavioreReportField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string StudentName {
+            get {
+                return this.studentNameField;
+            }
+            set {
+                this.studentNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Subject {
+            get {
+                return this.subjectField;
+            }
+            set {
+                this.subjectField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string TeacherName {
+            get {
+                return this.teacherNameField;
+            }
+            set {
+                this.teacherNameField = value;
             }
         }
     }
@@ -1327,11 +1515,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void IsAlreadyExistCompletedEventHandler(object sender, IsAlreadyExistCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class IsAlreadyExistCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1361,11 +1549,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void GetDataCompletedEventHandler(object sender, GetDataCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1387,19 +1575,19 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void RegisterStdCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void RegisterTeacherCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void IsLoginTeacherCompletedEventHandler(object sender, IsLoginTeacherCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class IsLoginTeacherCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1429,11 +1617,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void TeacherLogoutCompletedEventHandler(object sender, TeacherLogoutCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TeacherLogoutCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1463,11 +1651,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void StudentLogoutCompletedEventHandler(object sender, StudentLogoutCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class StudentLogoutCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1497,11 +1685,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void LoginCompletedEventHandler(object sender, LoginCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LoginCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1531,11 +1719,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void isValidUserCompletedEventHandler(object sender, isValidUserCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class isValidUserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1565,11 +1753,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void GetDataUsingDataContractCompletedEventHandler(object sender, GetDataUsingDataContractCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetDataUsingDataContractCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1591,11 +1779,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void IsTeacherAlreadyExistsCompletedEventHandler(object sender, IsTeacherAlreadyExistsCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class IsTeacherAlreadyExistsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1625,11 +1813,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void ValidResetCompletedEventHandler(object sender, ValidResetCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ValidResetCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1659,11 +1847,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void SetPasswordCompletedEventHandler(object sender, SetPasswordCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SetPasswordCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1693,19 +1881,19 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void DeleteRecordCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void resetPassCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void SetPasswordTeacherCompletedEventHandler(object sender, SetPasswordTeacherCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SetPasswordTeacherCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1735,15 +1923,15 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void resetPassTeacherCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void isValidSubjectCompletedEventHandler(object sender, isValidSubjectCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class isValidSubjectCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1773,15 +1961,49 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void isTeacherValidSubjectCompletedEventHandler(object sender, isTeacherValidSubjectCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class isTeacherValidSubjectCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal isTeacherValidSubjectCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool isTeacherValidSubjectResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool isTeacherValidSubjectResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void AddSubjectCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void IsSubjectAlreadyExistCompletedEventHandler(object sender, IsSubjectAlreadyExistCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class IsSubjectAlreadyExistCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1811,11 +2033,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void isTeacherSubAlreadyExistCompletedEventHandler(object sender, isTeacherSubAlreadyExistCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class isTeacherSubAlreadyExistCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1845,15 +2067,15 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void AddTeacherRegisteredSubjectCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void showSubjectsCompletedEventHandler(object sender, showSubjectsCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class showSubjectsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1875,11 +2097,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void TeacherShowSubjectCompletedEventHandler(object sender, TeacherShowSubjectCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TeacherShowSubjectCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1901,11 +2123,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void isValidTeacherCompletedEventHandler(object sender, isValidTeacherCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class isValidTeacherCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1935,11 +2157,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void isValidStudentCompletedEventHandler(object sender, isValidStudentCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class isValidStudentCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1969,11 +2191,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void ShowBySubjectCompletedEventHandler(object sender, ShowBySubjectCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ShowBySubjectCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -1995,11 +2217,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void UploadDMCCompletedEventHandler(object sender, UploadDMCCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class UploadDMCCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -2029,11 +2251,11 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void TeacherViewDMCCompletedEventHandler(object sender, TeacherViewDMCCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class TeacherViewDMCCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -2050,6 +2272,66 @@ namespace Grade_Uploading_and_Viewing_Criteria.localhost {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((DMC[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void UploadReportCompletedEventHandler(object sender, UploadReportCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class UploadReportCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal UploadReportCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool UploadReportResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool UploadReportResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void TeacherViewReportCompletedEventHandler(object sender, TeacherViewReportCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class TeacherViewReportCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal TeacherViewReportCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public Report[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Report[])(this.results[0]));
             }
         }
     }

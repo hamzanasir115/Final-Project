@@ -83,6 +83,7 @@
             this.btnUploadReport.TabIndex = 6;
             this.btnUploadReport.Text = "Upload Report";
             this.btnUploadReport.UseVisualStyleBackColor = true;
+            this.btnUploadReport.Click += new System.EventHandler(this.btnUploadReport_Click);
             // 
             // TeacherLoginView
             // 

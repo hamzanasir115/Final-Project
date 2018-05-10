@@ -67,6 +67,8 @@ namespace Grade_Uploading_and_viewing_Criteria
         [OperationContract]
         bool isValidSubject(string subjectName);
         [OperationContract]
+        bool isTeacherValidSubject(string subjectname);
+        [OperationContract]
         void AddSubject(string username, string subjectname, string subjectcode, string creditHour);
         [OperationContract]
         bool IsSubjectAlreadyExist(string username, string subjectname, string subjectcode);
@@ -96,6 +98,11 @@ namespace Grade_Uploading_and_viewing_Criteria
 
         [OperationContract]
         List<DMC> TeacherViewDMC(string subject);
+
+        [OperationContract]
+        bool UploadReport(string studentname, string teachername, string subject, string rep, string percentage);
+        [OperationContract]
+        List<Report> TeacherViewReport(string subject);
 
     }
 

@@ -41,7 +41,7 @@ namespace Grade_Uploading_and_Viewing_Criteria
             }
             else
             {
-                MessageBox.Show("Invalid Subject");
+                MessageBox.Show("Subject Not Registered");
             }
         }
 
@@ -69,6 +69,11 @@ namespace Grade_Uploading_and_Viewing_Criteria
 
 
 
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

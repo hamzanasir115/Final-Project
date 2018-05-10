@@ -260,6 +260,20 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="isTeacherValidSubject">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="subjectname" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="isTeacherValidSubjectResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isTeacherValidSubjectResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="AddSubject">
     <xs:complexType>
       <xs:sequence>
@@ -420,6 +434,38 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Grade_Uploading_and_viewing_Criteria" minOccurs="0" name="TeacherViewDMCResult" nillable="true" type="q6:ArrayOfDMC" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="studentname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="teachername" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="subject" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rep" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="percentage" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UploadReportResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TeacherViewReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="subject" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TeacherViewReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Grade_Uploading_and_viewing_Criteria" minOccurs="0" name="TeacherViewReportResult" nillable="true" type="q7:ArrayOfReport" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

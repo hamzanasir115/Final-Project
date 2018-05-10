@@ -65,6 +65,8 @@
   <ItemGroup>
     <Compile Include="DMC.cs" />
     <Compile Include="DMCDL.cs" />
+    <Compile Include="Report.cs" />
+    <Compile Include="ReportDL.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>

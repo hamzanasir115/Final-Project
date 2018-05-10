@@ -209,6 +209,19 @@ namespace Grade_Uploading_and_viewing_Criteria
             }
             return isfoundsubject;          
         }
+        public bool isTeacherValidSubject(string subjectname)
+        {
+            bool isfoundteachersubject = false;
+            foreach (SUBJECT sub in SUBJECTDL.TeacherSubList)
+            {
+                if (sub.SubjectName1 == subjectname)
+                {
+                    isfoundteachersubject = true;
+                }
+            }
+            return isfoundteachersubject;
+        }
+
 
         public void AddSubject(string username, string subjectname, string subjectcode, string creditHour)
         {
@@ -371,5 +384,42 @@ namespace Grade_Uploading_and_viewing_Criteria
             }
             return viewdmc;
         }
+
+        public bool UploadReport(string studentname, string teachername, string subject, string rep, string percentage)
+        {
+            bool isfound = false;
+            foreach(SUBJECT s in SUBJECTDL.SubjectList)
+            {
+                if(s.Username == studentname)
+                {
+                    isfound = true;
+                }
+            }
+            Report r = new Report();
+            if (isfound == true)
+            {
+                r.StudentName = studentname;
+                r.TeacherName = teachername;
+                r.Subject = subject;
+                r.BehavioreReport = rep;
+                r.AttendencePercentage = percentage;
+                ReportDL.report.Add(r);
+            }
+            return isfound;
+        }
+        public List<Report> TeacherViewReport(string subject)
+        {
+            List<Report> view = new List<Report>();
+            foreach (Report r in ReportDL.report)
+            {
+                if (r.Subject == subject)
+                {
+                    view.Add(r);
+                }
+            }
+            return view;
+        }
+
+
     }
 }

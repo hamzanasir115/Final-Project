@@ -52,6 +52,12 @@
     <Compile Include="ConfirmPasswordform.Designer.cs">
       <DependentUpon>ConfirmPasswordform.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExtraView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtraView.Designer.cs">
+      <DependentUpon>ExtraView.cs</DependentUpon>
+    </Compile>
     <Compile Include="OfferedSubjectsform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,18 @@
     <Compile Include="TeacherUploadedDMCform.Designer.cs">
       <DependentUpon>TeacherUploadedDMCform.cs</DependentUpon>
     </Compile>
+    <Compile Include="TeacherUploadedReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherUploadedReport.Designer.cs">
+      <DependentUpon>TeacherUploadedReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherUploadReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherUploadReport.Designer.cs">
+      <DependentUpon>TeacherUploadReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="TeacherViewStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +193,9 @@
     </Compile>
     <EmbeddedResource Include="ConfirmPasswordform.resx">
       <DependentUpon>ConfirmPasswordform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtraView.resx">
+      <DependentUpon>ExtraView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OfferedSubjectsform.resx">
       <DependentUpon>OfferedSubjectsform.cs</DependentUpon>
@@ -236,6 +257,12 @@
     <EmbeddedResource Include="TeacherUploadedDMCform.resx">
       <DependentUpon>TeacherUploadedDMCform.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TeacherUploadedReport.resx">
+      <DependentUpon>TeacherUploadedReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherUploadReport.resx">
+      <DependentUpon>TeacherUploadReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TeacherViewStudent.resx">
       <DependentUpon>TeacherViewStudent.cs</DependentUpon>
     </EmbeddedResource>
@@ -260,6 +287,9 @@
     <None Include="Web References\localhost\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\localhost\Report.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\localhost\Service1.wsdl" />
     <None Include="Web References\localhost\Service1.xsd">
