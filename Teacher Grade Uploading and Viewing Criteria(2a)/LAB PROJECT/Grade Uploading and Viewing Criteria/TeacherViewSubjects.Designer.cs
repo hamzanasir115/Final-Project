@@ -47,7 +47,7 @@
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(191, 27);
+            this.txtUserName.Location = new System.Drawing.Point(191, 34);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(198, 20);
             this.txtUserName.TabIndex = 1;
@@ -55,7 +55,7 @@
             // lblUserName
             // 
             this.lblUserName.AutoSize = true;
-            this.lblUserName.Location = new System.Drawing.Point(40, 34);
+            this.lblUserName.Location = new System.Drawing.Point(98, 41);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(57, 13);
             this.lblUserName.TabIndex = 2;
@@ -63,7 +63,7 @@
             // 
             // btnViewSubject
             // 
-            this.btnViewSubject.Location = new System.Drawing.Point(156, 69);
+            this.btnViewSubject.Location = new System.Drawing.Point(300, 71);
             this.btnViewSubject.Name = "btnViewSubject";
             this.btnViewSubject.Size = new System.Drawing.Size(89, 23);
             this.btnViewSubject.TabIndex = 3;
@@ -73,7 +73,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 8);
+            this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(24, 23);
             this.button1.TabIndex = 4;

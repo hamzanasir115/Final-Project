@@ -42,9 +42,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 23);
+            this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(25, 23);
+            this.button1.Size = new System.Drawing.Size(30, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "←";
             this.button1.UseVisualStyleBackColor = true;
@@ -61,7 +61,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 131);
+            this.label1.Location = new System.Drawing.Point(15, 131);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 13);
             this.label1.TabIndex = 2;
@@ -70,7 +70,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 166);
+            this.label2.Location = new System.Drawing.Point(15, 171);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(36, 13);
             this.label2.TabIndex = 3;
@@ -111,7 +111,7 @@
             // lblTeacherName
             // 
             this.lblTeacherName.AutoSize = true;
-            this.lblTeacherName.Location = new System.Drawing.Point(33, 101);
+            this.lblTeacherName.Location = new System.Drawing.Point(12, 101);
             this.lblTeacherName.Name = "lblTeacherName";
             this.lblTeacherName.Size = new System.Drawing.Size(78, 13);
             this.lblTeacherName.TabIndex = 6;

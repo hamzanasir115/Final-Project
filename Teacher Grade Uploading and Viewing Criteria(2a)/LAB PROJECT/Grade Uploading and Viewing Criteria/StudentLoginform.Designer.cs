@@ -41,16 +41,16 @@
             // 
             // txtusername
             // 
-            this.txtusername.Location = new System.Drawing.Point(125, 33);
+            this.txtusername.Location = new System.Drawing.Point(114, 33);
             this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(131, 20);
+            this.txtusername.Size = new System.Drawing.Size(142, 20);
             this.txtusername.TabIndex = 0;
             // 
             // txtpassword
             // 
-            this.txtpassword.Location = new System.Drawing.Point(125, 77);
+            this.txtpassword.Location = new System.Drawing.Point(114, 77);
             this.txtpassword.Name = "txtpassword";
-            this.txtpassword.Size = new System.Drawing.Size(131, 20);
+            this.txtpassword.Size = new System.Drawing.Size(142, 20);
             this.txtpassword.TabIndex = 1;
             // 
             // label1
@@ -73,7 +73,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(156, 132);
+            this.button1.Location = new System.Drawing.Point(156, 141);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 23);
             this.button1.TabIndex = 4;
@@ -83,7 +83,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(29, 132);
+            this.button2.Location = new System.Drawing.Point(29, 141);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 23);
             this.button2.TabIndex = 5;
@@ -94,7 +94,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(153, 196);
+            this.linkLabel1.Location = new System.Drawing.Point(188, 196);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(46, 13);
             this.linkLabel1.TabIndex = 6;
@@ -113,7 +113,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(105, 234);
+            this.button3.Location = new System.Drawing.Point(94, 233);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 8;

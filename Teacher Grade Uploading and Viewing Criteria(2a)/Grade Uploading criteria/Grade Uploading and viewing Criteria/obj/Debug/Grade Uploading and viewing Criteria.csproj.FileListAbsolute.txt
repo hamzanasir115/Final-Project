@@ -88,3 +88,8 @@ C:\Users\Hamza Nasir\Desktop\t\Final-Project\Teacher Grade Uploading and Viewing
 C:\Users\Hamza Nasir\Desktop\t\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\Grade Uploading criteria\Grade Uploading and viewing Criteria\bin\Grade Uploading and viewing Criteria.dll
 C:\Users\Hamza Nasir\Desktop\t\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\Grade Uploading criteria\Grade Uploading and viewing Criteria\bin\Grade Uploading and viewing Criteria.pdb
 C:\Users\Hamza Nasir\Desktop\t\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\Grade Uploading criteria\Grade Uploading and viewing Criteria\obj\Debug\Grade Uploading and viewing Criteria.pdb
+C:\Users\Engr\Desktop\OOAD4\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\Grade Uploading criteria\Grade Uploading and viewing Criteria\bin\Grade Uploading and viewing Criteria.dll
+C:\Users\Engr\Desktop\OOAD4\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\Grade Uploading criteria\Grade Uploading and viewing Criteria\bin\Grade Uploading and viewing Criteria.pdb
+C:\Users\Engr\Desktop\OOAD4\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\Grade Uploading criteria\Grade Uploading and viewing Criteria\obj\Debug\Grade Uploading and viewing Criteria.csprojResolveAssemblyReference.cache
+C:\Users\Engr\Desktop\OOAD4\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\Grade Uploading criteria\Grade Uploading and viewing Criteria\obj\Debug\Grade Uploading and viewing Criteria.dll
+C:\Users\Engr\Desktop\OOAD4\Final-Project\Teacher Grade Uploading and Viewing Criteria(2a)\Grade Uploading criteria\Grade Uploading and viewing Criteria\obj\Debug\Grade Uploading and viewing Criteria.pdb

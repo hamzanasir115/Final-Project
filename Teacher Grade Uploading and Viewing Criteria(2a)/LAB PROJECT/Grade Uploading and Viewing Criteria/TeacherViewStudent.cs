@@ -54,11 +54,23 @@ namespace Grade_Uploading_and_Viewing_Criteria
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            var item = dataGridView1.Rows[e.RowIndex].Cells[0].Value;
+            var item = dataGridView1.Rows[e.RowIndex].Cells[1].Value;
+            localhost.Service1 service = new localhost.Service1();
+            bool isvalidsub;
+            bool isvalidsubject;
+            service.isTeacherValidSubject(cmbsubject.Text, out isvalidsubject, out isvalidsub);
             // MessageBox.Show(item.ToString());
-            TeacherUploadDMC form = new TeacherUploadDMC(cmbsubject.Text);
-            this.Hide();
-            form.Show();
+            if (isvalidsubject)
+            {
+                TeacherUploadDMC form = new TeacherUploadDMC(cmbsubject.Text);
+                this.Hide();
+                form.Show();
+            }
+            else
+            {
+                MessageBox.Show("Teacher has not registered this subject, so he has no authority to update any result.");
+            }
+            
             
 
         }

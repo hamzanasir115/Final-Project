@@ -35,9 +35,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(94, 106);
+            this.button1.Location = new System.Drawing.Point(75, 114);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 23);
+            this.button1.Size = new System.Drawing.Size(109, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "View Student";
             this.button1.UseVisualStyleBackColor = true;
@@ -45,9 +45,9 @@
             // 
             // btnSubjects
             // 
-            this.btnSubjects.Location = new System.Drawing.Point(94, 67);
+            this.btnSubjects.Location = new System.Drawing.Point(75, 67);
             this.btnSubjects.Name = "btnSubjects";
-            this.btnSubjects.Size = new System.Drawing.Size(90, 23);
+            this.btnSubjects.Size = new System.Drawing.Size(109, 23);
             this.btnSubjects.TabIndex = 1;
             this.btnSubjects.Text = "View Subjects";
             this.btnSubjects.UseVisualStyleBackColor = true;
@@ -67,7 +67,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(265, 210);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnSubjects);
             this.Controls.Add(this.button1);

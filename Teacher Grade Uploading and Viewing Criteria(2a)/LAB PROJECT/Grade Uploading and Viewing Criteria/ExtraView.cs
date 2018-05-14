@@ -72,7 +72,7 @@ namespace Grade_Uploading_and_Viewing_Criteria
             }
             else
             {
-                MessageBox.Show("Teacher has not registered this subject.");
+                MessageBox.Show("Teacher has not registered this subject, so he has no authority to update any result.");
             }
             
         }

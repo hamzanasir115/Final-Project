@@ -29,7 +29,7 @@ namespace Grade_Uploading_and_Viewing_Criteria
             localhost.Service1 ser = new localhost.Service1();
             bool isvalidSub;
             bool isvalidsubject;
-            ser.isValidSubject(cmbSubject.Text, out isvalidsubject, out isvalidSub);
+            ser.isTeacherValidSubject(cmbSubject.Text, out isvalidsubject, out isvalidSub);
             BindingSource source = new BindingSource();
             if (isvalidsubject)
             {

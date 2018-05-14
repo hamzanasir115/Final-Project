@@ -48,15 +48,15 @@
             // 
             // txtusername
             // 
-            this.txtusername.Location = new System.Drawing.Point(133, 53);
+            this.txtusername.Location = new System.Drawing.Point(220, 53);
             this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(100, 20);
+            this.txtusername.Size = new System.Drawing.Size(157, 20);
             this.txtusername.TabIndex = 1;
             // 
             // lblusername
             // 
             this.lblusername.AutoSize = true;
-            this.lblusername.Location = new System.Drawing.Point(57, 56);
+            this.lblusername.Location = new System.Drawing.Point(125, 60);
             this.lblusername.Name = "lblusername";
             this.lblusername.Size = new System.Drawing.Size(57, 13);
             this.lblusername.TabIndex = 2;
@@ -67,12 +67,12 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(27, 151);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(302, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(369, 150);
             this.dataGridView1.TabIndex = 3;
             // 
             // btnShowReport
             // 
-            this.btnShowReport.Location = new System.Drawing.Point(111, 96);
+            this.btnShowReport.Location = new System.Drawing.Point(308, 96);
             this.btnShowReport.Name = "btnShowReport";
             this.btnShowReport.Size = new System.Drawing.Size(69, 23);
             this.btnShowReport.TabIndex = 4;
@@ -84,7 +84,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(351, 331);
+            this.ClientSize = new System.Drawing.Size(426, 331);
             this.Controls.Add(this.btnShowReport);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblusername);

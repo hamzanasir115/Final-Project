@@ -38,7 +38,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 28);
+            this.label1.Location = new System.Drawing.Point(21, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 0;
@@ -47,7 +47,7 @@
             // ConfirmPass
             // 
             this.ConfirmPass.AutoSize = true;
-            this.ConfirmPass.Location = new System.Drawing.Point(31, 67);
+            this.ConfirmPass.Location = new System.Drawing.Point(21, 119);
             this.ConfirmPass.Name = "ConfirmPass";
             this.ConfirmPass.Size = new System.Drawing.Size(91, 13);
             this.ConfirmPass.TabIndex = 1;
@@ -55,21 +55,21 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(137, 21);
+            this.txtPassword.Location = new System.Drawing.Point(137, 64);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(116, 20);
             this.txtPassword.TabIndex = 2;
             // 
             // txtConfirmPassword
             // 
-            this.txtConfirmPassword.Location = new System.Drawing.Point(137, 60);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(137, 112);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.Size = new System.Drawing.Size(116, 20);
             this.txtConfirmPassword.TabIndex = 3;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(93, 110);
+            this.button1.Location = new System.Drawing.Point(86, 169);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(91, 23);
             this.button1.TabIndex = 4;

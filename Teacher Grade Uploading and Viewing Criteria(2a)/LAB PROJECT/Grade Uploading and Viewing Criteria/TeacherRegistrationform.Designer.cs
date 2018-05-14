@@ -78,14 +78,14 @@
             // 
             this.txtusername.Location = new System.Drawing.Point(138, 51);
             this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(100, 20);
+            this.txtusername.Size = new System.Drawing.Size(171, 20);
             this.txtusername.TabIndex = 3;
             // 
             // txtpassword
             // 
             this.txtpassword.Location = new System.Drawing.Point(138, 86);
             this.txtpassword.Name = "txtpassword";
-            this.txtpassword.Size = new System.Drawing.Size(100, 20);
+            this.txtpassword.Size = new System.Drawing.Size(171, 20);
             this.txtpassword.TabIndex = 4;
             this.txtpassword.TextChanged += new System.EventHandler(this.txtpassword_TextChanged);
             // 
@@ -93,7 +93,7 @@
             // 
             this.txtsecretcode.Location = new System.Drawing.Point(138, 150);
             this.txtsecretcode.Name = "txtsecretcode";
-            this.txtsecretcode.Size = new System.Drawing.Size(100, 20);
+            this.txtsecretcode.Size = new System.Drawing.Size(171, 20);
             this.txtsecretcode.TabIndex = 5;
             this.txtsecretcode.TextChanged += new System.EventHandler(this.txtsecretcode_TextChanged);
             // 
@@ -110,12 +110,12 @@
             // 
             this.txtconfirmpassword.Location = new System.Drawing.Point(138, 119);
             this.txtconfirmpassword.Name = "txtconfirmpassword";
-            this.txtconfirmpassword.Size = new System.Drawing.Size(100, 20);
+            this.txtconfirmpassword.Size = new System.Drawing.Size(171, 20);
             this.txtconfirmpassword.TabIndex = 7;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(119, 203);
+            this.button1.Location = new System.Drawing.Point(180, 203);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 8;
@@ -136,13 +136,13 @@
             // 
             this.txtemail.Location = new System.Drawing.Point(138, 20);
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(100, 20);
+            this.txtemail.Size = new System.Drawing.Size(171, 20);
             this.txtemail.TabIndex = 10;
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(34, 213);
+            this.linkLabel1.Location = new System.Drawing.Point(74, 213);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(33, 13);
             this.linkLabel1.TabIndex = 11;
@@ -162,7 +162,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(356, 261);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.txtemail);
             this.Controls.Add(this.label5);

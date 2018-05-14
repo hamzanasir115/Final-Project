@@ -39,9 +39,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(44, 131);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 131);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(263, 168);
+            this.dataGridView1.Size = new System.Drawing.Size(343, 168);
             this.dataGridView1.TabIndex = 0;
             // 
             // cmbSubject
@@ -55,13 +55,13 @@
             "Digital and Logic Design"});
             this.cmbSubject.Location = new System.Drawing.Point(142, 38);
             this.cmbSubject.Name = "cmbSubject";
-            this.cmbSubject.Size = new System.Drawing.Size(121, 21);
+            this.cmbSubject.Size = new System.Drawing.Size(165, 21);
             this.cmbSubject.TabIndex = 1;
             // 
             // lblsubject
             // 
             this.lblsubject.AutoSize = true;
-            this.lblsubject.Location = new System.Drawing.Point(58, 41);
+            this.lblsubject.Location = new System.Drawing.Point(74, 46);
             this.lblsubject.Name = "lblsubject";
             this.lblsubject.Size = new System.Drawing.Size(43, 13);
             this.lblsubject.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             // btnShow
             // 
-            this.btnShow.Location = new System.Drawing.Point(188, 83);
+            this.btnShow.Location = new System.Drawing.Point(232, 81);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(75, 23);
             this.btnShow.TabIndex = 3;

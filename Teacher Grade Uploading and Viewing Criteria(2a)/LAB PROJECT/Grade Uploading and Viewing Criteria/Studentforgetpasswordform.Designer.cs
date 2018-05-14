@@ -40,14 +40,14 @@
             // 
             // txtusername
             // 
-            this.txtusername.Location = new System.Drawing.Point(113, 22);
+            this.txtusername.Location = new System.Drawing.Point(113, 40);
             this.txtusername.Name = "txtusername";
             this.txtusername.Size = new System.Drawing.Size(144, 20);
             this.txtusername.TabIndex = 0;
             // 
             // txtanswer
             // 
-            this.txtanswer.Location = new System.Drawing.Point(113, 80);
+            this.txtanswer.Location = new System.Drawing.Point(113, 132);
             this.txtanswer.Name = "txtanswer";
             this.txtanswer.Size = new System.Drawing.Size(144, 20);
             this.txtanswer.TabIndex = 1;
@@ -62,7 +62,7 @@
             "In which section do you read?",
             "What is your pet name?",
             "What is your hobby?"});
-            this.cmbquestions.Location = new System.Drawing.Point(113, 48);
+            this.cmbquestions.Location = new System.Drawing.Point(113, 87);
             this.cmbquestions.Name = "cmbquestions";
             this.cmbquestions.Size = new System.Drawing.Size(144, 21);
             this.cmbquestions.TabIndex = 2;
@@ -70,7 +70,7 @@
             // lblusername
             // 
             this.lblusername.AutoSize = true;
-            this.lblusername.Location = new System.Drawing.Point(20, 29);
+            this.lblusername.Location = new System.Drawing.Point(20, 47);
             this.lblusername.Name = "lblusername";
             this.lblusername.Size = new System.Drawing.Size(57, 13);
             this.lblusername.TabIndex = 3;
@@ -79,7 +79,7 @@
             // lblsecret
             // 
             this.lblsecret.AutoSize = true;
-            this.lblsecret.Location = new System.Drawing.Point(20, 56);
+            this.lblsecret.Location = new System.Drawing.Point(20, 95);
             this.lblsecret.Name = "lblsecret";
             this.lblsecret.Size = new System.Drawing.Size(83, 13);
             this.lblsecret.TabIndex = 4;
@@ -88,7 +88,7 @@
             // lblanswer
             // 
             this.lblanswer.AutoSize = true;
-            this.lblanswer.Location = new System.Drawing.Point(20, 87);
+            this.lblanswer.Location = new System.Drawing.Point(20, 139);
             this.lblanswer.Name = "lblanswer";
             this.lblanswer.Size = new System.Drawing.Size(42, 13);
             this.lblanswer.TabIndex = 5;
@@ -96,7 +96,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(166, 133);
+            this.button1.Location = new System.Drawing.Point(166, 181);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(91, 23);
             this.button1.TabIndex = 11;
@@ -106,7 +106,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(23, 133);
+            this.button2.Location = new System.Drawing.Point(61, 181);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 12;
@@ -118,7 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 334);
+            this.ClientSize = new System.Drawing.Size(284, 234);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblanswer);

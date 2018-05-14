@@ -47,7 +47,7 @@
             // 
             // btnShowSubject
             // 
-            this.btnShowSubject.Location = new System.Drawing.Point(262, 63);
+            this.btnShowSubject.Location = new System.Drawing.Point(383, 63);
             this.btnShowSubject.Name = "btnShowSubject";
             this.btnShowSubject.Size = new System.Drawing.Size(89, 23);
             this.btnShowSubject.TabIndex = 1;
@@ -58,7 +58,7 @@
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(115, 26);
+            this.lblUsername.Location = new System.Drawing.Point(185, 30);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(57, 13);
             this.lblUsername.TabIndex = 2;
@@ -66,14 +66,14 @@
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(228, 19);
+            this.txtUserName.Location = new System.Drawing.Point(298, 23);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(147, 20);
+            this.txtUserName.Size = new System.Drawing.Size(174, 20);
             this.txtUserName.TabIndex = 3;
             // 
             // btnMainMenu
             // 
-            this.btnMainMenu.Location = new System.Drawing.Point(73, 63);
+            this.btnMainMenu.Location = new System.Drawing.Point(270, 63);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(75, 23);
             this.btnMainMenu.TabIndex = 4;

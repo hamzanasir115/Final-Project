@@ -40,19 +40,19 @@
             // 
             this.txtsecret.Location = new System.Drawing.Point(124, 113);
             this.txtsecret.Name = "txtsecret";
-            this.txtsecret.Size = new System.Drawing.Size(121, 20);
+            this.txtsecret.Size = new System.Drawing.Size(130, 20);
             this.txtsecret.TabIndex = 9;
             // 
             // txtusername
             // 
             this.txtusername.Location = new System.Drawing.Point(124, 65);
             this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(121, 20);
+            this.txtusername.Size = new System.Drawing.Size(130, 20);
             this.txtusername.TabIndex = 8;
             // 
             // bbsave
             // 
-            this.bbsave.Location = new System.Drawing.Point(84, 163);
+            this.bbsave.Location = new System.Drawing.Point(83, 174);
             this.bbsave.Name = "bbsave";
             this.bbsave.Size = new System.Drawing.Size(104, 23);
             this.bbsave.TabIndex = 7;
@@ -80,9 +80,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(25, 23);
+            this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(23, 27);
+            this.button1.Size = new System.Drawing.Size(31, 27);
             this.button1.TabIndex = 67;
             this.button1.Text = "←";
             this.button1.UseVisualStyleBackColor = true;

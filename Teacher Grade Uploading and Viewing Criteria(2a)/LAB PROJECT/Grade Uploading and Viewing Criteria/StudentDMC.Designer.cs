@@ -52,15 +52,15 @@
             // 
             // txtusername
             // 
-            this.txtusername.Location = new System.Drawing.Point(284, 34);
+            this.txtusername.Location = new System.Drawing.Point(332, 37);
             this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(129, 20);
+            this.txtusername.Size = new System.Drawing.Size(181, 20);
             this.txtusername.TabIndex = 1;
             // 
             // lblusername
             // 
             this.lblusername.AutoSize = true;
-            this.lblusername.Location = new System.Drawing.Point(114, 37);
+            this.lblusername.Location = new System.Drawing.Point(230, 44);
             this.lblusername.Name = "lblusername";
             this.lblusername.Size = new System.Drawing.Size(57, 13);
             this.lblusername.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(222, 83);
+            this.button1.Location = new System.Drawing.Point(423, 78);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(90, 23);
             this.button1.TabIndex = 3;
@@ -90,7 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(676, 355);
+            this.ClientSize = new System.Drawing.Size(595, 355);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblusername);
